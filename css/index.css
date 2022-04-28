@@ -1,0 +1,104 @@
+body {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#barra {
+  width: 0;
+  height: 5px;
+}
+
+#barragris {
+  height: 5px;
+}
+
+#icono1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  margin-left: 0;
+  text-align: center;
+}
+
+#icono2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+#icono3 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.iconos {
+  width: 50%;
+  margin-top: -17.5px;
+}
+
+#seccion1,
+#seccion2,
+#seccion3 {
+  width: 90%;
+  height: 300px;
+}
+
+#seccion2,
+#seccion3 {
+  visibility: hidden;
+  margin-top: -300px;
+}
+
+#atras {
+  visibility: hidden;
+}
+
+#enviar {
+  visibility: hidden;
+}
+
+p {
+  text-align: justify;
+}
+
+input {
+  border: 0;
+  border-bottom: 2px solid #caccce;
+  background-color: #eee;
+}
+
+input:focus {
+  border-bottom: 2px solid #0d6efd;
+  transition: all 0.2s ease-in-out;
+  outline: 0;
+}
+
+#atras,
+#siguiente,
+#enviar {
+  transition: all 0s;
+}
+
+p {
+  background: #caccce;
+}
+
+@media screen and (min-width: 1000px) {
+  #cajaBotonesIniReg {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #cajaBotonesIniReg {
+    margin-top: 25px;
+  }
+}
