@@ -1,6 +1,7 @@
 body {
   background-attachment: fixed;
   background-size: cover;
+  scrollbar-width: auto;
 }
 
 #barra {
@@ -101,4 +102,13 @@ p {
   #cajaBotonesIniReg {
     margin-top: 25px;
   }
+
+  .brQuitarSM{
+    display: none;
+  }
+}
+
+.clases{
+  background-color:white;
+  height:200px;
 }
