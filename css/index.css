@@ -1,7 +1,6 @@
 body {
   background-attachment: fixed;
   background-size: cover;
-  scrollbar-width: auto;
 }
 
 #barra {
@@ -92,9 +91,17 @@ p {
   background: #caccce;
 }
 
+#cajaInicio{
+  margin-top: 275px;
+}
+
 @media screen and (min-width: 1000px) {
   #cajaBotonesIniReg {
     width: 25%;
+  }
+
+  #cajaInicio{
+    width: 30%;
   }
 }
 
@@ -105,6 +112,10 @@ p {
 
   .brQuitarSM{
     display: none;
+  }
+
+  #cajaInicio{
+    width: 80%;
   }
 }
 
