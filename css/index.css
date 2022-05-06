@@ -91,9 +91,17 @@ p {
   background: #caccce;
 }
 
+#cajaInicio{
+  margin-top: 275px;
+}
+
 @media screen and (min-width: 1000px) {
   #cajaBotonesIniReg {
     width: 25%;
+  }
+
+  #cajaInicio{
+    width: 30%;
   }
 }
 
@@ -101,4 +109,39 @@ p {
   #cajaBotonesIniReg {
     margin-top: 25px;
   }
+
+  .brQuitarSM{
+    display: none;
+  }
+
+  #cajaInicio{
+    width: 80%;
+  }
+
+  #logoIndex{
+    width: 75%;
+  }
+}
+
+.clases{
+  background-color:white;
+  height:200px;
+}
+
+.barraLectura {
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.progress-container {
+  background-color: rgba(150, 150, 150, 0.6);
+  height: 5px;
+  width: 100%;
+}
+
+.progress-bar {
+  background-color: #0d6efd;
+  height: 5px;
+  width: 0%;
 }
