@@ -121,6 +121,10 @@ p {
   #logoIndex{
     width: 75%;
   }
+
+  #indexfooter{
+    width: 100%;
+  }
 }
 
 .clases{
