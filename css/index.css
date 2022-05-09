@@ -91,45 +91,83 @@ p {
   background: #caccce;
 }
 
-#cajaInicio{
+#cajaInicio {
   margin-top: 275px;
 }
 
 @media screen and (min-width: 1000px) {
+  #bodyRegistro{
+    margin-top: 10px;
+    padding: 40px;
+  }
+
   #cajaBotonesIniReg {
     width: 25%;
   }
 
-  #cajaInicio{
+  #cajaInicio {
     width: 30%;
+  }
+
+  #cajaFormulario {
+    margin: auto;
+    width: 50%;
+  }
+
+  #formularioRegistro {
+    width: 75%;
   }
 }
 
 @media screen and (max-width: 575px) {
+  #bodyRegistro{
+    padding: 0;
+  }
+
   #cajaBotonesIniReg {
     margin-top: 25px;
   }
 
-  .brQuitarSM{
+  .brQuitarSM {
     display: none;
   }
 
-  #cajaInicio{
+  #cajaInicio {
     width: 80%;
   }
 
-  #logoIndex{
+  #logoIndex {
     width: 75%;
   }
 
-  #indexfooter{
+  #indexfooter {
+    width: 100%;
+  }
+
+  #cajaFormulario {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #formularioRegistro {
+    width: 100%;
+  }
+
+  #seccion1,
+  #seccion2,
+  #seccion3 {
+    width: 90%;
+    height: min-content;
+  }
+
+  #seccion1 {
     width: 100%;
   }
 }
 
-.clases{
-  background-color:white;
-  height:200px;
+.clases {
+  background-color: white;
+  height: 200px;
 }
 
 .barraLectura {
