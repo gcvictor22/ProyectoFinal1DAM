@@ -35,13 +35,13 @@ function ampliar() {
 
     if (nom.length == 0 || ap1.length == 0 || ap2.length == 0 || telefono.length == 0 || correo.length == 0 || pass.length == 0 || pass2.length == 0) {
         alert('Faltan datos por rellenar');
-    
+
     } else if (telefono.length != 9) {
         alert('El teléfono introducido no cumple con el formato esperado');
 
     } else if (pass !== pass2) {
         alert('Las contraseñas deben coincidir')
-    
+
     } else if (cont == 0 && nom.length != 0 && ap1.length != 0 && ap2.length != 0 && telefono.length != 0 && correo.length != 0 && pass.length != 0 && pass2.length != 0) {
         cont++;
         width = 50;
@@ -109,14 +109,13 @@ function reducir() {
 
 function progressBarScroll() {
     let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
-      height =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight,
-      scrolled = (winScroll / height) * 100;
+        height =
+            document.documentElement.scrollHeight -
+            document.documentElement.clientHeight,
+        scrolled = (winScroll / height) * 100;
     document.getElementById("progressBar").style.width = scrolled + "%";
-  }
-  
-  window.onscroll = function () {
+}
+
+window.onscroll = function () {
     progressBarScroll();
-  };
-  
+};
