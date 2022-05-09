@@ -48,13 +48,13 @@ body {
 #seccion2,
 #seccion3 {
   width: 90%;
-  height: 300px;
+  height: 350px;
 }
 
 #seccion2,
 #seccion3 {
   visibility: hidden;
-  margin-top: -300px;
+  margin-top: -350px;
 }
 
 #atras {
@@ -91,41 +91,83 @@ p {
   background: #caccce;
 }
 
-#cajaInicio{
+#cajaInicio {
   margin-top: 275px;
 }
 
 @media screen and (min-width: 1000px) {
+  #bodyRegistro{
+    margin-top: 10px;
+    padding: 40px;
+  }
+
   #cajaBotonesIniReg {
     width: 25%;
   }
 
-  #cajaInicio{
+  #cajaInicio {
     width: 30%;
   }
-}
 
-@media screen and (max-width: 575px) {
-  #cajaBotonesIniReg {
-    margin-top: 25px;
+  #cajaFormulario {
+    margin: auto;
+    width: 50%;
   }
 
-  .brQuitarSM{
-    display: none;
-  }
-
-  #cajaInicio{
-    width: 80%;
-  }
-
-  #logoIndex{
+  #formularioRegistro {
     width: 75%;
   }
 }
 
-.clases{
-  background-color:white;
-  height:200px;
+@media screen and (max-width: 575px) {
+  #bodyRegistro{
+    padding: 0;
+  }
+
+  #cajaBotonesIniReg {
+    margin-top: 25px;
+  }
+
+  .brQuitarSM {
+    display: none;
+  }
+
+  #cajaInicio {
+    width: 80%;
+  }
+
+  #logoIndex {
+    width: 75%;
+  }
+
+  #indexfooter {
+    width: 100%;
+  }
+
+  #cajaFormulario {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #formularioRegistro {
+    width: 100%;
+  }
+
+  #seccion1,
+  #seccion2,
+  #seccion3 {
+    width: 90%;
+    height: min-content;
+  }
+
+  #seccion1 {
+    width: 100%;
+  }
+}
+
+.clases {
+  background-color: white;
+  height: 200px;
 }
 
 .barraLectura {
