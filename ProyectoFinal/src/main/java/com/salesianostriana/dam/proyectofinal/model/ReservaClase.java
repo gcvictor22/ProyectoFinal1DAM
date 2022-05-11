@@ -32,7 +32,7 @@ public class ReservaClase {
 	private String tel;
 	private double precioTotal;
 	
-	@DateTimeFormat(pattern = "yyyy-mm-dd")
+	@DateTimeFormat(pattern = "dd-mm-yyyy")
 	private LocalDate fechaReserva;
 
 	@ManyToOne
