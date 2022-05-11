@@ -1,4 +1,4 @@
-package com.salesianostriana.dam.proyectpfinal;
+package com.salesianostriana.dam.proyectofinal;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
