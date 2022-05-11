@@ -96,13 +96,13 @@ p {
 }
 
 @media screen and (min-width: 1000px) {
-  #bodyRegistro{
+  #bodyRegistro {
     margin-top: 10px;
     padding: 40px;
   }
 
   #cajaBotonesIniReg {
-    width: 25%;
+    width: 45%;
   }
 
   #cajaInicio {
@@ -120,7 +120,7 @@ p {
 }
 
 @media screen and (max-width: 575px) {
-  #bodyRegistro{
+  #bodyRegistro {
     padding: 0;
   }
 
@@ -186,4 +186,13 @@ p {
   background-color: #0d6efd;
   height: 5px;
   width: 0%;
+}
+
+tbody tr:hover{
+  border: #0d6efd;
+  transition: all 0.5s;
+} 
+
+tbody td, tbody th{
+  vertical-align: middle;
 }

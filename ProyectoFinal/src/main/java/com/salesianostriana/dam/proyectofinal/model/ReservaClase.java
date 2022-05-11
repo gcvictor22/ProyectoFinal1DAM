@@ -1,13 +1,13 @@
 package com.salesianostriana.dam.proyectofinal.model;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.time.LocalDate;
 
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToOne;
+
+import org.springframework.format.annotation.DateTimeFormat;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -21,20 +21,22 @@ import lombok.ToString;
 @NoArgsConstructor
 @Entity
 @Builder
-public class ClaseGym {
+public class ReservaClase {
 
 	@Id @GeneratedValue
 	private long id;
 	
-	private String nombreClase;
-	private String horario; //Ej:12:30-13:30
-	private double precio;
-	private int plazas;
-	private String imgClase;
+	private long idClase;
+	private String nombreUsuario;
+	private String email;
+	private String tel;
+	private double precioTotal;
 	
-	@Builder.Default
+	@DateTimeFormat(pattern = "dd-mm-yyyy")
+	private LocalDate fechaReserva;
+
+	@ManyToOne
 	@ToString.Exclude
 	@EqualsAndHashCode.Exclude
-	@OneToMany(mappedBy = "clase", fetch = FetchType.EAGER)
-	private List <ReservaClase> reservas = new ArrayList();
+	private ClaseGym clase;
 }

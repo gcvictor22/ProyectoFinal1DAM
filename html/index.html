@@ -23,13 +23,13 @@
     <div class="container-fluid px-0">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top pt-2">
             <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="../img/FIT&GO.png" alt="" class="rounded w-75"></a>
+                <a class="navbar-brand" href="#"><img src="../img/FIT&GO.png" alt="" class="rounded w-75"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav d-flex justify-content-center w-100">
+                    <ul class="navbar-nav d-flex justify-content-around w-100">
                         <li class="nav-item">
                             <a class="nav-link text-center" href="#clasesgym">Clases</a>
                         </li>
@@ -41,7 +41,11 @@
                         </li>
                     </ul>
                     <div class="mx-auto d-flex justify-content-around" id="cajaBotonesIniReg">
-                        <a href="iniciar.html" class="btn btn-dark border border-primary">Iniciar sesión</a>
+                        <a href="gestionar.html" class="btn btn-outline-light">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                              </svg> Gestionar</a>
+                        <a href="iniciar.html" class="btn btn-dark border border-primary" id="iniciarSesion">Iniciar sesión</a>
                         <a href="registro.html" class="btn btn-primary">Registrarme</a>
                     </div>
                 </div>
@@ -83,7 +87,7 @@
                             <img src="../img/clasezumba.png" class="rounded" alt="clase de zumba">
                             <div class="d-flex flex-column">
                                 <p class="bg-white my-0"><span class="text-primary">Plazas: </span>25</p>
-                                <p class="bg-white my-0"><span class="text-primary">Horario: </span>16:30 - 17:30</p>
+                                <p class="bg-white my-0"><span class="text-primary">Horario: </span>16:30 - 18:00</p>
                                 <a href="#" class="btn btn-primary mt-2">Reservar</a>
                             </div>
                         </div>
@@ -101,7 +105,7 @@
                             <img src="../img/clasescrossfit.png" class="rounded" alt="clase de spinning">
                             <div class="d-flex flex-column">
                                 <p class="bg-white my-0"><span class="text-primary">Plazas: </span>10</p>
-                                <p class="bg-white my-0"><span class="text-primary">Horario: </span>18:00 - 20:00</p>
+                                <p class="bg-white my-0"><span class="text-primary">Horario: </span>18:30 - 20:00</p>
                                 <a href="#" class="btn btn-primary mt-2">Reservar</a>
                             </div>
                         </div>
@@ -109,10 +113,10 @@
                     <div class="col-lg-2 col-sm-0"></div>
                     <br>
                     <div class="col-lg-5 col-sm-12 clases my-0 rounded p-3">
-                        <h3 class="h3 text-center">Clase de Bodybulding</h3>
+                        <h3 class="h3 text-center">Clase de Bodybuilding</h3>
                         <br>
                         <div class="container-fluid d-flex justify-content-around">
-                            <img src="../img/clasebodybuilding.png" class="rounded" alt="clase de spinning">
+                            <img src="../img/bodybuilding.png" class="rounded" alt="clase de spinning">
                             <div class="d-flex flex-column">
                                 <p class="bg-white my-0"><span class="text-primary">Plazas: </span>5</p>
                                 <p class="bg-white my-0"><span class="text-primary">Horario: </span>20:30 - 22:30</p>
@@ -177,8 +181,8 @@
         <footer class="container-fluid bg-dark py-3">
             <div class="row" id="indexfooter">
                 <a href="info.html" class="text-white col-lg-2 col-sm-4 text-center">Más información</a>
-                <a href="politica.html" class="text-white col-lg-2 col-sm-4 text-center">Política de privacidad</a>
-                <a href="catalogo.html" class="text-white col-lg-2 col-sm-4 text-center">Catálogo de imagenes</a>
+                <a href="politica.html" class="text-white col-lg-2 col-sm-4 text-center" target="_blank">Política de privacidad</a>
+                <a href="catalogo.html" class="text-white col-lg-2 col-sm-4 text-center">Página de contacto</a>
             </div>
         </footer>
     </div>
