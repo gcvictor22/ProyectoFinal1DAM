@@ -15,6 +15,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
     <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/index.js"></script>
 </head>
 
 <body class="bg-dark">
@@ -27,7 +28,7 @@
                         Gestionar Clases
                     </a>
                 </div>
-                <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
                     <div class="card-body">
                         <table class="table text-center p-4 bg-white">
                             <thead>
@@ -37,6 +38,7 @@
                                     <th scope="col">Precio</th>
                                     <th scope="col">Horario</th>
                                     <th scope="col">Plazas</th>
+                                    <th scope="col">Imagen</th>
                                     <th scope="col">Acciones</th>
                                 </tr>
                             </thead>
@@ -47,6 +49,7 @@
                                     <td>5.99€</td>
                                     <td>12:30-13:30</td>
                                     <td>15</td>
+                                    <td class="w-25"><img src="../img/clasespinning.png" class="rounded" alt=""></td>
                                     <td>
                                         <div class="container-fluid mx-auto row">
                                             <div class="col-lg-2 col-sm-60"></div>
@@ -63,6 +66,7 @@
                                     <td>8.99€</td>
                                     <td>16:30-18:00</td>
                                     <td>25</td>
+                                    <td class="w-25"><img src="../img/clasezumba.png" class="rounded" alt=""></td>
                                     <td>
                                         <div class="container-fluid mx-auto row">
                                             <div class="col-lg-2 col-sm-0"></div>
@@ -79,6 +83,7 @@
                                     <td>15.49€</td>
                                     <td>18:30-20:00</td>
                                     <td>10</td>
+                                    <td class="w-25"><img src="../img/clasescrossfit.png" class="rounded" alt=""></td>
                                     <td>
                                         <div class="container-fluid mx-auto row">
                                             <div class="col-lg-2 col-sm-0"></div>
@@ -95,6 +100,7 @@
                                     <td>24.99€</td>
                                     <td>20:30-22:30</td>
                                     <td>5</td>
+                                    <td class="w-25"><img src="../img/bodybuilding.png" class="rounded" alt=""></td>
                                     <td>
                                         <div class="container-fluid mx-auto row">
                                             <div class="col-lg-2 col-sm-0"></div>
@@ -200,7 +206,50 @@
                     </div>
                 </div>
             </div>
-
+            <br>
+            <div class="card p-3">
+                <div class="mx-auto">
+                    <a class="collapsed btn btn-primary" data-bs-toggle="collapse" href="#collapseThree">
+                        Añadir clase
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                    <div class="w-50 mx-auto card-body">
+                        <form action="index.html" class="mx-auto" id="formularioInicio" method="post">
+                            <div class="form-floating">
+                                <input type="text" name="nombreClase" id="nombreClase" class="form-control" placeholder="Nombre de la clase" required>
+                                <label for="nombreClase">Nombre de la Clase</label>
+                            </div>
+                            <br>
+                            <div class="form-floating">
+                                <input type="text" name="horario" id="horario" class="form-control" placeholder="Horario" required>
+                                <label for="horario">Horario</label>
+                            </div>
+                            <br>
+                            <div class="form-floating">
+                                <input type="text" name="precio" id="precio" class="form-control" placeholder="Precio" required>
+                                <label for="precio">Precio</label>
+                            </div>
+                            <br>
+                            <div class="form-floating">
+                                <input type="number" name="plazas" id="plazas" class="form-control" placeholder="Plazas"
+                                    required>
+                                <label for="plazas">Plazas</label>
+                            </div>
+                            <br>
+                            <div class="form-floating">
+                                <input type="text" name="imgClase" id="imgClase" class="form-control" placeholder="Imagen"
+                                    required>
+                                <label for="imgClase">Imagen</label>
+                            </div>
+                            <br>
+                            <div class="mx-auto w-25">
+                                <input type="submit" value="Crear" name="crearClase" id="enviarInicio" class="btn btn-outline-primary w-100">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

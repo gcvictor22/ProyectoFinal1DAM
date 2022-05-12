@@ -27,8 +27,8 @@ public class ClaseGym {
 	private long id;
 	
 	private String nombreClase;
-	private String horario; //Ej:12:30-13:30
 	private double precio;
+	private String horario; //Ej:12:30-13:30
 	private int plazas;
 	private String imgClase;
 	

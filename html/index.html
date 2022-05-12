@@ -41,11 +41,46 @@
                         </li>
                     </ul>
                     <div class="mx-auto d-flex justify-content-around" id="cajaBotonesIniReg">
-                        <a href="gestionar.html" class="btn btn-outline-light">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
-                                <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
-                              </svg> Gestionar</a>
-                        <a href="iniciar.html" class="btn btn-dark border border-primary" id="iniciarSesion">Iniciar sesión</a>
+                        <div class="dropdown">
+                            <button type="button" class="btn btn-outline-light dropdown-toggle"
+                                data-bs-toggle="dropdown">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+                                </svg> Gestionar
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="gestionar.html" onclick="gestionClase()">Gestionar
+                                        Clases</a></li>
+                                <li><a class="dropdown-item" href="gestionar.html" onclick="gestionReservas()">Gestionar
+                                        Reservas</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown">
+                            <button class="btn btn-dark border border-primary dropdown-toggle"
+                                data-bs-toggle="dropdown">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person-fill text-white" id="user" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                </svg>
+                                Mi cuenta
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="iniciar.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z" />
+                                            <path fill-rule="evenodd"
+                                                d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
+                                        </svg>
+                                        Cerrar sesion
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                         <a href="registro.html" class="btn btn-primary">Registrarme</a>
                     </div>
                 </div>
@@ -181,7 +216,8 @@
         <footer class="container-fluid bg-dark py-3">
             <div class="row" id="indexfooter">
                 <a href="info.html" class="text-white col-lg-2 col-sm-4 text-center">Más información</a>
-                <a href="politica.html" class="text-white col-lg-2 col-sm-4 text-center" target="_blank">Política de privacidad</a>
+                <a href="politica.html" class="text-white col-lg-2 col-sm-4 text-center" target="_blank">Política de
+                    privacidad</a>
                 <a href="catalogo.html" class="text-white col-lg-2 col-sm-4 text-center">Página de contacto</a>
             </div>
         </footer>

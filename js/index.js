@@ -119,3 +119,19 @@ function progressBarScroll() {
 window.onscroll = function () {
     progressBarScroll();
 };
+
+function gestionClase (){
+    let desplegable1 = document.getElementById("collapseOne");
+    let desplegable2 = document.getElementById("collapseTwo");
+
+    desplegable1.className = "collapse show";
+    desplegable2.className = "collapse";
+}
+
+function gestionReservas (){
+    let desplegable1 = document.getElementById("collapseOne");
+    let desplegable2 = document.getElementById("collapseTwo");
+
+    desplegable1.className = "collapse";
+    desplegable2.className = "collapse show";
+}
