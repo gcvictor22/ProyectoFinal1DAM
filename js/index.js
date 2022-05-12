@@ -1,6 +1,16 @@
 let width = 0;
 let cont = 0;
 
+urlParams = new URLSearchParams(window.location.search);
+
+if (urlParams.get('menu') == 'clases') {
+    let desplegable1 = document.getElementById("collapseOne");
+    desplegable1.className = 'collapse show'
+}else if (urlParams.get('menu') == 'reservas'){
+    let desplegable2 = document.getElementById("collapseTwo");
+    desplegable2.className = 'collapse show'
+}
+
 function ampliar() {
 
     let barra = document.getElementById("barra");
@@ -121,7 +131,7 @@ window.onscroll = function () {
 };
 
 function gestionClase (){
-    let desplegable1 = document.getElementById("collapseOne");
+
     let desplegable2 = document.getElementById("collapseTwo");
 
     desplegable1.className = "collapse show";

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,6 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
     <link rel="stylesheet" href="../css/index.css">
-    <script src="../js/index.js"></script>
 </head>
 
 <body class="bg-dark">
@@ -32,7 +31,7 @@
                     <div class="card-body">
                         <table class="table text-center p-4 bg-white">
                             <thead>
-                                <tr>
+                                <tr th:each="alumno : ${lista}">
                                     <th scope="col uppercase">ID</th>
                                     <th scope="col">Nombre</th>
                                     <th scope="col">Precio</th>
@@ -44,18 +43,18 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>Spinning</td>
-                                    <td>5.99€</td>
-                                    <td>12:30-13:30</td>
-                                    <td>15</td>
-                                    <td class="w-25"><img src="../img/clasespinning.png" class="rounded" alt=""></td>
+                                    <th scope="row"  th:text="${ClaseGym.id}">1</th>
+                                    <td th:text="${ClaseGym.nombreClase}">Spinning</td>
+                                    <td th:text="${ClaseGym.precio}">5.99€</td>
+                                    <td th:text="${ClaseGym.horario}">12:30-13:30</td>
+                                    <td th:text="${ClaseGym.plazas}">15</td>
+                                    <td class="w-25"  th:text="${ClaseGym.imgClase}"><img src="../img/clasespinning.png" class="rounded" alt=""></td>
                                     <td>
                                         <div class="container-fluid mx-auto row">
                                             <div class="col-lg-2 col-sm-60"></div>
-                                            <button class="btn btn-outline-primary col-lg-3">Editar</button>
+                                            <button class="btn btn-outline-primary col-lg-3" th:href="@{/editar/{id}(id=${ClaseGym.id})}">Editar</button>
                                             <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-danger col-lg-3">Eliminar</button>
+                                            <button class="btn btn-danger col-lg-3" th:href="@{/editar/{id}(id=${ClaseGym.id})}">Eliminar</button>
                                             <div class="col-lg-2 col-sm-0"></div>
                                         </div>
                                     </td>
@@ -145,10 +144,8 @@
                                     <td>15</td>
                                     <td>
                                         <div class="container-fluid mx-auto row">
-                                            <div class="col-lg-2 col-sm-60"></div>
-                                            <button class="btn btn-outline-primary col-lg-3">Editar</button>
                                             <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-danger col-lg-3">Eliminar</button>
+                                            <button class="btn btn-danger col-lg">Eliminar</button>
                                             <div class="col-lg-2 col-sm-0"></div>
                                         </div>
                                     </td>
@@ -162,9 +159,7 @@
                                     <td>
                                         <div class="container-fluid mx-auto row">
                                             <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-outline-primary col-lg-3">Editar</button>
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-danger col-lg-3">Eliminar</button>
+                                            <button class="btn btn-danger col-lg">Eliminar</button>
                                             <div class="col-lg-2 col-sm-0"></div>
                                         </div>
                                     </td>
@@ -178,9 +173,7 @@
                                     <td>
                                         <div class="container-fluid mx-auto row">
                                             <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-outline-primary col-lg-3">Editar</button>
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-danger col-lg-3">Eliminar</button>
+                                            <button class="btn btn-danger col-lg">Eliminar</button>
                                             <div class="col-lg-2 col-sm-0"></div>
                                         </div>
                                     </td>
@@ -194,9 +187,7 @@
                                     <td>
                                         <div class="container-fluid mx-auto row">
                                             <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-outline-primary col-lg-3">Editar</button>
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-danger col-lg-3">Eliminar</button>
+                                            <button class="btn btn-danger col-lg">Eliminar</button>
                                             <div class="col-lg-2 col-sm-0"></div>
                                         </div>
                                     </td>
@@ -252,6 +243,7 @@
             </div>
         </div>
     </div>
+    <script src="../js/index.js"></script>
 </body>
 
 </html>

@@ -6,6 +6,7 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 
@@ -23,7 +24,8 @@ import lombok.ToString;
 @Builder
 public class ClaseGym {
 
-	@Id @GeneratedValue
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
 	private long id;
 	
 	private String nombreClase;
@@ -37,4 +39,12 @@ public class ClaseGym {
 	@EqualsAndHashCode.Exclude
 	@OneToMany(mappedBy = "clase", fetch = FetchType.EAGER)
 	private List <ReservaClase> reservas = new ArrayList();
+	
+	public ClaseGym(String nombreClase, double precio, String horario, int plazas, String imgClase) {
+		this.nombreClase = nombreClase;
+		this.precio = precio;
+		this.horario = horario;
+		this.plazas = plazas;
+		this.imgClase = imgClase;
+	}
 }
