@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"
+	xmlns:th="http://www.thymeleaf.org" 
+	xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+>
 
 <head>
     <meta charset="UTF-8">
@@ -14,10 +17,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
         </script>
-    <script src="../js/index.js"></script>
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/tarjetas.css">
-</head>
+    <script src="../js/index.js" th:href="@{/js/index.js}"></script>
+    <link rel="stylesheet" href="../css/index.css" th:href="@{/css/index.css}"}>
+    <link rel="stylesheet" href="../css/tarjetas.css" th:href="@{/css/tarjetas.css}">
+</head> 
 
 <body style="background-image: url(../img/fondoindex.jpg);">
     <div class="container-fluid px-0">

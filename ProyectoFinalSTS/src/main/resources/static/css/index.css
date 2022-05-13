@@ -1,0 +1,202 @@
+body {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#barra {
+  width: 0;
+  height: 5px;
+}
+
+#barragris {
+  height: 5px;
+}
+
+#icono1 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  margin-left: 0;
+  text-align: center;
+}
+
+#icono2 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+#icono3 {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  transition: all 0.5s;
+  text-align: center;
+}
+
+.iconos {
+  width: 50%;
+  margin-top: -17.5px;
+}
+
+#seccion1,
+#seccion2,
+#seccion3 {
+  width: 90%;
+  height: 350px;
+}
+
+#seccion2,
+#seccion3 {
+  visibility: hidden;
+  margin-top: -350px;
+}
+
+#atras {
+  visibility: hidden;
+}
+
+#enviar {
+  visibility: hidden;
+}
+
+p {
+  text-align: justify;
+}
+
+input {
+  border: 0;
+  border-bottom: 2px solid #caccce;
+  background-color: #eee;
+}
+
+input:focus {
+  border-bottom: 2px solid #0d6efd;
+  transition: all 0.2s ease-in-out;
+  outline: 0;
+}
+
+#atras,
+#siguiente,
+#enviar {
+  transition: all 0s;
+}
+
+p {
+  background: #caccce;
+}
+
+#cajaInicio {
+  margin-top: 275px;
+}
+
+@media screen and (min-width: 1000px) {
+  #bodyRegistro {
+    margin-top: 10px;
+    padding: 40px;
+  }
+
+  #cajaBotonesIniReg {
+    width: 45%;
+  }
+
+  #cajaInicio {
+    width: 30%;
+  }
+
+  #cajaFormulario {
+    margin: auto;
+    width: 50%;
+  }
+
+  #formularioRegistro {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #bodyRegistro {
+    padding: 0;
+  }
+
+  #cajaBotonesIniReg {
+    margin-top: 25px;
+  }
+
+  .brQuitarSM {
+    display: none;
+  }
+
+  #cajaInicio {
+    width: 80%;
+  }
+
+  #logoIndex {
+    width: 75%;
+  }
+
+  #indexfooter {
+    width: 100%;
+  }
+
+  #cajaFormulario {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  #formularioRegistro {
+    width: 100%;
+  }
+
+  #seccion1,
+  #seccion2,
+  #seccion3 {
+    width: 90%;
+    height: min-content;
+  }
+
+  #seccion1 {
+    width: 100%;
+  }
+}
+
+.clases {
+  background-color: white;
+  height: 200px;
+}
+
+.barraLectura {
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.progress-container {
+  background-color: rgba(150, 150, 150, 0.6);
+  height: 5px;
+  width: 100%;
+}
+
+.progress-bar {
+  background-color: #0d6efd;
+  height: 5px;
+  width: 0%;
+}
+
+tbody tr:hover{
+  border: #0d6efd;
+  transition: all 0.5s;
+} 
+
+tbody td, tbody th{
+  vertical-align: middle;
+}
+
+#bodyInicioSesion{
+	background-image: url(../img/fondoinicio.jpg);
+}
