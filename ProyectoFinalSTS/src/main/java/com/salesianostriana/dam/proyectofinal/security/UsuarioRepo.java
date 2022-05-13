@@ -30,22 +30,29 @@ public class UsuarioRepo {
 				Usuario.builder()
 					.username("luismi")
 					.password("12345678")
-					.role("ADMIN")
+					.role("USER")
 					.nombre("Luis Miguel")
 					.apellidos("López Magaña")
 					.fechaNacimiento(LocalDate.of(1982, 1, 1))
 					.build()
-				,
-				Usuario.builder()
-				.username("angel")
-				.password("87654321")
-				.role("USER")
-				.nombre("Ángel")
-				.apellidos("Naranjo González")
-				.fechaNacimiento(LocalDate.of(1976, 1, 1))
-				.build()
-				
-				
+					,
+					Usuario.builder()
+					.username("angel")
+					.password("87654321")
+					.role("USER")
+					.nombre("Ángel")
+					.apellidos("Naranjo González")
+					.fechaNacimiento(LocalDate.of(1976, 1, 1))
+					.build()
+					,
+					Usuario.builder()
+					.username("admin")
+					.password("admin")
+					.role("ADMIN")
+					.nombre("Administrador")
+					.apellidos("")
+					.fechaNacimiento(LocalDate.of(2022, 5, 13))
+					.build()
 				);
 				
 	}
