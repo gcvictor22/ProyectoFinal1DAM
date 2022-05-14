@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
-<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html lang="es"
+xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <head>
 	<meta charset="UTF-8">
@@ -25,8 +26,8 @@
 		<form form method="post" th:action="@{/login}" sec:authorize="!isAuthenticated()" class="mx-auto"
 			id="formularioInicio">
 			<div class="form-floating">
-				<input type="text" name="username" id="username" class="form-control" placeholder="Correo" required>
-				<label for="username">Correo</label>
+				<input type="text" name="username" id="username" class="form-control" placeholder="Usuario" required>
+				<label for="username">Usuario</label>
 			</div>
 			<br>
 			<div class="form-floating">

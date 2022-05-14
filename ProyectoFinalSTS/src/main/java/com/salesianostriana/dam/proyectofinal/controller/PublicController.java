@@ -12,11 +12,28 @@ public class PublicController {
 		return "index";
 	}
 
-
 	@GetMapping("/error")
 	public String error() {
 		return "error";
 	}
 	
-
+	@GetMapping("/info")
+	public String info() {
+		return "info";
+	}
+	
+	@GetMapping("/registro")
+	public String registro() {
+		return "registro";
+	}
+	
+	@GetMapping("/politica")
+	public String politica() {
+		return "politica";
+	}
+	
+	@GetMapping("/gestionar")
+	public String gestionar() {
+		return "gestionar";
+	}
 }

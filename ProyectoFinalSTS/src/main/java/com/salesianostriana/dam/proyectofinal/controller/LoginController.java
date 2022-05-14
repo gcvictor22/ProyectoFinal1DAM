@@ -10,13 +10,13 @@ public class LoginController {
 
     @GetMapping("/inicio")
     public String login() {
-        return "inicio.html";
+        return "inicio";
     }
 
     @GetMapping("/login-error")
     public String loginError(Model model) {
         model.addAttribute("loginError", true);
-        return "index.html";
+        return "index";
     }
 
 }
