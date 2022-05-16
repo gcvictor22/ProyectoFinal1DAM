@@ -1,254 +1,205 @@
 <!DOCTYPE html>
-<html lang="es"
-xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fit&Go · Gestionar</title>
-    <link rel="icon" class="rounded" href="../img/FIT&GO.png">
-    <!-- CSS only -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-        </script>
-    <link rel="stylesheet" href="../css/index.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fit&Go · Gestionar</title>
+	<link rel="icon" class="rounded" href="../img/FIT&GO.png">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+		</script>
+	<link rel="stylesheet" href="../css/index.css">
 </head>
 
 <body class="bg-dark">
-    <div class="container rounded mt-5">
-        <div id="accordion">
+	<div class="container rounded mt-5">
+		<div id="accordion">
 
-            <div class="card p-3">
-                <div class="mx-auto">
-                    <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseOne">
-                        Gestionar Clases
-                    </a>
-                </div>
-                <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
-                    <div class="card-body">
-                        <table class="table text-center p-4 bg-white">
-                            <thead>
-                                <tr>
-                                    <th scope="col uppercase">ID</th>
-                                    <th scope="col">Nombre</th>
-                                    <th scope="col">Precio</th>
-                                    <th scope="col">Horario</th>
-                                    <th scope="col">Plazas</th>
-                                    <th scope="col">Imagen</th>
-                                    <th scope="col">Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Spinning</td>
-                                    <td>5.99€</td>
-                                    <td>12:30-13:30</td>
-                                    <td>15</td>
-                                    <td class="w-25"><img src="../img/clasespinning.png" class="rounded" alt=""></td>
-                                    <td>
-                                        <div class="container-fluid mx-auto row">
-                                            <div class="col-lg-2 col-sm-60"></div>
-                                            <button class="btn btn-outline-primary col-lg-3">Editar</button>
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-danger col-lg-3">Eliminar</button>
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Zumba</td>
-                                    <td>8.99€</td>
-                                    <td>16:30-18:00</td>
-                                    <td>25</td>
-                                    <td class="w-25"><img src="../img/clasezumba.png" class="rounded" alt=""></td>
-                                    <td>
-                                        <div class="container-fluid mx-auto row">
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-outline-primary col-lg-3">Editar</button>
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-danger col-lg-3">Eliminar</button>
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Cross-Fit</td>
-                                    <td>15.49€</td>
-                                    <td>18:30-20:00</td>
-                                    <td>10</td>
-                                    <td class="w-25"><img src="../img/clasescrossfit.png" class="rounded" alt=""></td>
-                                    <td>
-                                        <div class="container-fluid mx-auto row">
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-outline-primary col-lg-3">Editar</button>
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-danger col-lg-3">Eliminar</button>
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Bodybuilding</td>
-                                    <td>24.99€</td>
-                                    <td>20:30-22:30</td>
-                                    <td>5</td>
-                                    <td class="w-25"><img src="../img/bodybuilding.png" class="rounded" alt=""></td>
-                                    <td>
-                                        <div class="container-fluid mx-auto row">
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-outline-primary col-lg-3">Editar</button>
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-danger col-lg-3">Eliminar</button>
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="card p-3">
-                <div class="mx-auto">
-                    <a class="collapsed btn btn-primary" data-bs-toggle="collapse" href="#collapseTwo">
-                        Gestionar reservas
-                    </a>
-                </div>
-                <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
-                    <div class="card-body">
-                        <table class="table text-center p-4 bg-white">
-                            <thead>
-                                <tr>
-                                    <th scope="col uppercase">ID</th>
-                                    <th scope="col">Nombre</th>
-                                    <th scope="col">Precio</th>
-                                    <th scope="col">Horario</th>
-                                    <th scope="col">Plazas</th>
-                                    <th scope="col">Acciones</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Spinning</td>
-                                    <td>5.99€</td>
-                                    <td>12:30-13:30</td>
-                                    <td>15</td>
-                                    <td>
-                                        <div class="container-fluid mx-auto row">
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-danger col-lg">Eliminar</button>
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Zumba</td>
-                                    <td>8.99€</td>
-                                    <td>16:30-18:00</td>
-                                    <td>25</td>
-                                    <td>
-                                        <div class="container-fluid mx-auto row">
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-danger col-lg">Eliminar</button>
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Cross-Fit</td>
-                                    <td>15.49€</td>
-                                    <td>18:30-20:00</td>
-                                    <td>10</td>
-                                    <td>
-                                        <div class="container-fluid mx-auto row">
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-danger col-lg">Eliminar</button>
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Bodybuilding</td>
-                                    <td>24.99€</td>
-                                    <td>20:30-22:30</td>
-                                    <td>5</td>
-                                    <td>
-                                        <div class="container-fluid mx-auto row">
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                            <button class="btn btn-danger col-lg">Eliminar</button>
-                                            <div class="col-lg-2 col-sm-0"></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="card p-3">
-                <div class="mx-auto">
-                    <a class="collapsed btn btn-primary" data-bs-toggle="collapse" href="#collapseThree">
-                        Añadir clase
-                    </a>
-                </div>
-                <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
-                    <div class="w-50 mx-auto card-body">
-                        <form action="index.html" class="mx-auto" id="formularioInicio" method="post">
-                            <div class="form-floating">
-                                <input type="text" name="nombreClase" id="nombreClase" class="form-control"
-                                    placeholder="Nombre de la clase" required>
-                                <label for="nombreClase">Nombre de la Clase</label>
-                            </div>
-                            <br>
-                            <div class="form-floating">
-                                <input type="text" name="horario" id="horario" class="form-control"
-                                    placeholder="Horario" required>
-                                <label for="horario">Horario</label>
-                            </div>
-                            <br>
-                            <div class="form-floating">
-                                <input type="text" name="precio" id="precio" class="form-control" placeholder="Precio"
-                                    required>
-                                <label for="precio">Precio</label>
-                            </div>
-                            <br>
-                            <div class="form-floating">
-                                <input type="number" name="plazas" id="plazas" class="form-control" placeholder="Plazas"
-                                    required>
-                                <label for="plazas">Plazas</label>
-                            </div>
-                            <br>
-                            <div class="form-floating">
-                                <input type="text" name="imgClase" id="imgClase" class="form-control"
-                                    placeholder="Imagen" required>
-                                <label for="imgClase">Imagen</label>
-                            </div>
-                            <br>
-                            <div class="mx-auto w-25">
-                                <input type="submit" value="Crear" name="crearClase" id="enviarInicio"
-                                    class="btn btn-outline-primary w-100">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="../js/index.js"></script>
+			<div class="card p-3">
+				<div class="mx-auto">
+					<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseOne">
+						Gestionar Clases
+					</a>
+				</div>
+				<div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+					<div class="card-body">
+						<table class="table text-center p-4 bg-white">
+							<thead>
+								<tr>
+									<th scope="col uppercase">ID</th>
+									<th scope="col">Nombre</th>
+									<th scope="col">Precio</th>
+									<th scope="col">Horario</th>
+									<th scope="col">Plazas</th>
+									<th scope="col">Imagen</th>
+									<th scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr th:each="claseGym : ${lista}">
+									<th scope="row" th:text="claseGym.id">1</th>
+									<td th:text="${claseGym.nombreClase}">Spinning</td>
+									<td th:text="${claseGym.precio}">5.99€</td>
+									<td th:text="${claseGym.horario}">12:30-13:30</td>
+									<td th:text="${claseGym.plazas}">15</td>
+									<td class="w-25" th:text="${claseGym.imgClase}"><img src="../img/clasespinning.png"
+											class="rounded w-25" alt=""></td>
+									<td>
+										<div class="container-fluid mx-auto row">
+											<div class="col-lg-2 col-sm-60"></div>
+											<button class="btn btn-outline-primary col-lg-3"
+												th:href="@{/gestionar/nueva-clase}">Editar</button>
+											<div class="col-lg-2 col-sm-0"></div>
+											<button class="btn btn-danger col-lg-3">Eliminar</button>
+											<div class="col-lg-2 col-sm-0"></div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="card p-3">
+				<div class="mx-auto">
+					<a class="collapsed btn btn-primary" data-bs-toggle="collapse" href="#collapseTwo">
+						Gestionar reservas
+					</a>
+				</div>
+				<div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+					<div class="card-body">
+						<table class="table text-center p-4 bg-white">
+							<thead>
+								<tr>
+									<th scope="col uppercase">ID</th>
+									<th scope="col">Nombre</th>
+									<th scope="col">Precio</th>
+									<th scope="col">Horario</th>
+									<th scope="col">Plazas</th>
+									<th scope="col">Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th scope="row">1</th>
+									<td>Spinning</td>
+									<td>5.99€</td>
+									<td>12:30-13:30</td>
+									<td>15</td>
+									<td>
+										<div class="container-fluid mx-auto row">
+											<div class="col-lg-2 col-sm-0"></div>
+											<button class="btn btn-danger col-lg">Eliminar</button>
+											<div class="col-lg-2 col-sm-0"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">2</th>
+									<td>Zumba</td>
+									<td>8.99€</td>
+									<td>16:30-18:00</td>
+									<td>25</td>
+									<td>
+										<div class="container-fluid mx-auto row">
+											<div class="col-lg-2 col-sm-0"></div>
+											<button class="btn btn-danger col-lg">Eliminar</button>
+											<div class="col-lg-2 col-sm-0"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">3</th>
+									<td>Cross-Fit</td>
+									<td>15.49€</td>
+									<td>18:30-20:00</td>
+									<td>10</td>
+									<td>
+										<div class="container-fluid mx-auto row">
+											<div class="col-lg-2 col-sm-0"></div>
+											<button class="btn btn-danger col-lg">Eliminar</button>
+											<div class="col-lg-2 col-sm-0"></div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<th scope="row">4</th>
+									<td>Bodybuilding</td>
+									<td>24.99€</td>
+									<td>20:30-22:30</td>
+									<td>5</td>
+									<td>
+										<div class="container-fluid mx-auto row">
+											<div class="col-lg-2 col-sm-0"></div>
+											<button class="btn btn-danger col-lg">Eliminar</button>
+											<div class="col-lg-2 col-sm-0"></div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<br>
+			<div class="card p-3">
+				<div class="mx-auto">
+					<a class="collapsed btn btn-primary" data-bs-toggle="collapse" href="#collapseThree">
+						Añadir clase
+					</a>
+				</div>
+				<div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+					<div class="w-50 mx-auto card-body">
+						<form class="mx-auto" th:action="@{/gestionar/nueva-clase/submit}" th:object="${claseGym}"
+							id="formularioInicio" method="post">
+							<div class="form-floating">
+								<input type="text" name="nombreClase" id="nombreClase" class="form-control"
+									placeholder="Nombre de la clase" required th:field="*{nombreClase}">
+								<label for="nombreClase">Nombre de la Clase</label>
+							</div>
+							<br>
+							<div class="form-floating">
+								<input type="text" name="horario" id="horario" class="form-control"
+									placeholder="Horario" required th:field="*{horario}">
+								<label for="horario">Horario</label>
+							</div>
+							<br>
+							<div class="form-floating">
+								<input type="text" name="precio" id="precio" class="form-control" placeholder="Precio"
+									required th:field"*{precio}">
+								<label for="precio">Precio</label>
+							</div>
+							<br>
+							<div class="form-floating">
+								<input type="number" name="plazas" id="plazas" class="form-control" placeholder="Plazas"
+									required th:field"*{plazas}">
+								<label for="plazas">Plazas</label>
+							</div>
+							<br>
+							<div class="form-floating">
+								<input type="text" name="imgClase" id="imgClase" class="form-control"
+									placeholder="Imagen" required th:field"*{imgClase}">
+								<label for="imgClase">Imagen</label>
+							</div>
+							<br>
+							<div class="mx-auto w-25">
+								<input type="submit" value="Crear" name="crearClase" id="enviarInicio"
+									class="btn btn-outline-primary w-100">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="../js/index.js"></script>
 </body>
 
 </html>

@@ -39,12 +39,4 @@ public class ClaseGym {
 	@EqualsAndHashCode.Exclude
 	@OneToMany(mappedBy = "clase", fetch = FetchType.EAGER)
 	private List <ReservaClase> reservas = new ArrayList();
-	
-	public ClaseGym(String nombreClase, double precio, String horario, int plazas, String imgClase) {
-		this.nombreClase = nombreClase;
-		this.precio = precio;
-		this.horario = horario;
-		this.plazas = plazas;
-		this.imgClase = imgClase;
-	}
 }

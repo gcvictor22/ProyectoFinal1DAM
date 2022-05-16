@@ -31,9 +31,4 @@ public class PublicController {
 	public String politica() {
 		return "politica";
 	}
-	
-	@GetMapping("/gestionar")
-	public String gestionar() {
-		return "gestionar";
-	}
 }
