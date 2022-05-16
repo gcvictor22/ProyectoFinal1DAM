@@ -31,4 +31,5 @@ public class PublicController {
 	public String politica() {
 		return "politica";
 	}
+
 }

@@ -17,7 +17,7 @@
 	<link rel="stylesheet" href="../css/index.css">
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark" id=bodyGestionar>
 	<div class="container rounded mt-5">
 		<div id="accordion">
 
@@ -43,24 +43,28 @@
 							</thead>
 							<tbody>
 								<tr th:each="claseGym : ${lista}">
-									<th scope="row" th:text="claseGym.id">1</th>
+									<th scope="row" th:text="${claseGym.id}">1</th>
 									<td th:text="${claseGym.nombreClase}">Spinning</td>
 									<td th:text="${claseGym.precio}">5.99€</td>
 									<td th:text="${claseGym.horario}">12:30-13:30</td>
 									<td th:text="${claseGym.plazas}">15</td>
-									<td class="w-25" th:text="${claseGym.imgClase}"><img src="../img/clasespinning.png"
+									<td class="w-25"><img src="../img/clasespinning.png" th:src="${claseGym.imgClase}"
 											class="rounded w-25" alt=""></td>
 									<td>
 										<div class="container-fluid mx-auto row">
 											<div class="col-lg-2 col-sm-60"></div>
-											<button class="btn btn-outline-primary col-lg-3"
-												th:href="@{/gestionar/nueva-clase}">Editar</button>
+											<a class="btn btn-outline-primary col-lg-3"
+												th:href="@{/gestionar/editar/{id}(id=${claseGym.id})}">Editar</a>
 											<div class="col-lg-2 col-sm-0"></div>
-											<button class="btn btn-danger col-lg-3">Eliminar</button>
+											<a class="btn btn-danger col-lg-3"
+												th:href="@{/borrar/{id}(id=${claseGym.id})}">Eliminar</a>
 											<div class="col-lg-2 col-sm-0"></div>
 										</div>
 									</td>
 								</tr>
+								<tr>
+                                    <td colspan="7"><a href="formularioCrearEditar.html" th:href="@{/gestionar/nueva-clase}" class="btn btn-outline-primary mx-auto" >Crear una nueva clase</a></td>
+                                </tr>
 							</tbody>
 						</table>
 					</div>
@@ -145,55 +149,6 @@
 								</tr>
 							</tbody>
 						</table>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div class="card p-3">
-				<div class="mx-auto">
-					<a class="collapsed btn btn-primary" data-bs-toggle="collapse" href="#collapseThree">
-						Añadir clase
-					</a>
-				</div>
-				<div id="collapseThree" class="collapse" data-bs-parent="#accordion">
-					<div class="w-50 mx-auto card-body">
-						<form class="mx-auto" th:action="@{/gestionar/nueva-clase/submit}" th:object="${claseGym}"
-							id="formularioInicio" method="post">
-							<div class="form-floating">
-								<input type="text" name="nombreClase" id="nombreClase" class="form-control"
-									placeholder="Nombre de la clase" required th:field="*{nombreClase}">
-								<label for="nombreClase">Nombre de la Clase</label>
-							</div>
-							<br>
-							<div class="form-floating">
-								<input type="text" name="horario" id="horario" class="form-control"
-									placeholder="Horario" required th:field="*{horario}">
-								<label for="horario">Horario</label>
-							</div>
-							<br>
-							<div class="form-floating">
-								<input type="text" name="precio" id="precio" class="form-control" placeholder="Precio"
-									required th:field"*{precio}">
-								<label for="precio">Precio</label>
-							</div>
-							<br>
-							<div class="form-floating">
-								<input type="number" name="plazas" id="plazas" class="form-control" placeholder="Plazas"
-									required th:field"*{plazas}">
-								<label for="plazas">Plazas</label>
-							</div>
-							<br>
-							<div class="form-floating">
-								<input type="text" name="imgClase" id="imgClase" class="form-control"
-									placeholder="Imagen" required th:field"*{imgClase}">
-								<label for="imgClase">Imagen</label>
-							</div>
-							<br>
-							<div class="mx-auto w-25">
-								<input type="submit" value="Crear" name="crearClase" id="enviarInicio"
-									class="btn btn-outline-primary w-100">
-							</div>
-						</form>
 					</div>
 				</div>
 			</div>

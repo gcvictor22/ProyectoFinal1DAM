@@ -25,24 +25,32 @@ public class ClaseGymController {
 		return "gestionar";
 	}
 
-	@GetMapping("/detalle/{id}")
-	public String detail(Model model, @PathVariable Long id) {
-
-		Optional<ClaseGym> result = claseServicio.findById(id);
-
-		if (result.isPresent()) {
-			model.addAttribute("alumno", result.get());
-			return "clase/detail";
+	@GetMapping("/gestionar/editar/{id}")
+	public String mostrarFormularioEdicion(@PathVariable("id") long id, Model model) {
+		
+		Optional<ClaseGym> claseE = claseServicio.findById(id);
+		
+		if (claseE != null) {
+			model.addAttribute("claseGym", claseE.get());
+			return "formularioCrearEditar";
+			
 		} else {
-			return "redirect:/inicio";
+			return "redirect:/gestionar";
 		}
-
+		
+		
+	}
+	
+	@PostMapping("/editar/submit")
+	public String procesarFormularioEdicion(@ModelAttribute("claseGym") ClaseGym c) {
+		claseServicio.edit(c);
+		return "redirect:/gestionar";
 	}
 	
 	@GetMapping("/gestionar/nueva-clase")
 	public String showForm(Model model) {
 		model.addAttribute("claseGym", new ClaseGym());
-		return "gestionar";
+		return "formularioCrearEditar";
 	}
 	
 	@PostMapping("/gestionar/nueva-clase/submit")
@@ -51,4 +59,9 @@ public class ClaseGymController {
 		return "redirect:/gestionar";
 	}
 
+	@GetMapping("/borrar/{id}")
+	public String borrar(@PathVariable("id") long id) {
+		claseServicio.deleteById(id);
+		return "redirect:/gestionar";
+	}
 }
