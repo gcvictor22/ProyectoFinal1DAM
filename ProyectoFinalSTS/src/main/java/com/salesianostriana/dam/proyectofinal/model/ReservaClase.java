@@ -26,13 +26,12 @@ public class ReservaClase {
 	@Id @GeneratedValue
 	private long id;
 	
-	private long idClase;
 	private String nombreUsuario;
 	private String email;
 	private String tel;
 	private double precioTotal;
 	
-	@DateTimeFormat(pattern = "dd-mm-yyyy")
+	@DateTimeFormat(pattern = "dd-MM-yyyy")
 	private LocalDate fechaReserva;
 
 	@ManyToOne

@@ -118,7 +118,7 @@ p {
     width: 75%;
   }
 
-  #formularioCrear{
+  #formularioCrear, #formularioReservar{
     width: 50%;
     padding: 20px;
   }
@@ -204,4 +204,11 @@ tbody td, tbody th{
 
 #bodyInicioSesion{
 	background-image: url(../img/fondoinicio.jpg);
+}
+
+#formularioReserva{
+	background-image: url(../img/bodyFormularioReserva.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }

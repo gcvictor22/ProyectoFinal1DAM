@@ -12,16 +12,21 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.salesianostriana.dam.proyectofinal.model.ClaseGym;
 import com.salesianostriana.dam.proyectofinal.servicios.ClaseServicio;
+import com.salesianostriana.dam.proyectofinal.servicios.ReservaServicio;
 
 @Controller
 public class ClaseGymController {
 
 	@Autowired
 	private ClaseServicio claseServicio;
+	
+	@Autowired
+	private ReservaServicio reservaServicio;
 
 	@GetMapping("/gestionar")
 	public String list(Model model) {
 		model.addAttribute("lista", claseServicio.findAll());
+		model.addAttribute("reserva", reservaServicio.findAll());
 		return "gestionar";
 	}
 
@@ -59,7 +64,7 @@ public class ClaseGymController {
 		return "redirect:/gestionar";
 	}
 
-	@GetMapping("/borrar/{id}")
+	@GetMapping("/borrar-clase/{id}")
 	public String borrar(@PathVariable("id") long id) {
 		claseServicio.deleteById(id);
 		return "redirect:/gestionar";

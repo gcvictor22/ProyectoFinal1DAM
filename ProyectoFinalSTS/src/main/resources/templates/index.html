@@ -38,11 +38,5 @@ xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/s
 			<br>
 			<input type="submit" value="Iniciar sesión" name="enviar" id="enviarInicio" class="btn btn-primary w-100">
 		</form>
-		<div sec:authorize="isAuthenticated()" class="text-center w-100">
-			<!--<img class="border border-primary rounded-circle w-50" th:src="${usuario.avatar}" />-->
-			<br>
-			<p class="bg-transparent text-center">Usuario: <span sec:authentication="name">Nombre</span></p>
-			<a th:href="@{/inicio}" class="btn btn-primary">Entrar</a>
-		</div>
 	</div>
 </body>

@@ -1,5 +1,6 @@
 let width = 0;
 let cont = 0;
+let comprobacion = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
 
 urlParams = new URLSearchParams(window.location.search);
 
@@ -49,6 +50,9 @@ function ampliar() {
     } else if (telefono.length != 9) {
         alert('El teléfono introducido no cumple con el formato esperado');
 
+    } else if (!comprobacion.exec(correo) && correo.length == 0) {
+		alert('El correo introducido no es válido')
+    
     } else if (pass !== pass2) {
         alert('Las contraseñas deben coincidir')
 
@@ -129,19 +133,3 @@ function progressBarScroll() {
 window.onscroll = function () {
     progressBarScroll();
 };
-
-function gestionClase (){
-
-    let desplegable2 = document.getElementById("collapseTwo");
-
-    desplegable1.className = "collapse show";
-    desplegable2.className = "collapse";
-}
-
-function gestionReservas (){
-    let desplegable1 = document.getElementById("collapseOne");
-    let desplegable2 = document.getElementById("collapseTwo");
-
-    desplegable1.className = "collapse";
-    desplegable2.className = "collapse show";
-}
