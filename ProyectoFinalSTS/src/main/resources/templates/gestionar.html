@@ -125,18 +125,18 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr th:each="reservaClase : ${reservas}">
-									<th scope="row" th:text="${reservaClase.id}">1</th>
-									<td th:text="${reservaClase.nombreUsuario}">Víctor González Carro</td>
-									<td th:text="${reservaClase.email}">victorgonzaleztr22@gmail.com</td>
-									<td th:text="${reservaClase.tel}">684318827</td>
-									<td th:text="${reservaClase.precioTotal}">5.99€</td>
-									<td th:text="${reservaClase.clase.nombreClase}"></td>
-									<td th:text="${fechaReserva}">17-5-2022</td>
+								<tr th:each="reserva : ${reservas}">
+									<th scope="row" th:text="${reserva.id}">1</th>
+									<td th:text="${reserva.nombreUsuario}">Víctor González Carro</td>
+									<td th:text="${reserva.email}">victorgonzaleztr22@gmail.com</td>
+									<td th:text="${reserva.tel}">684318827</td>
+									<td th:text="${#numbers.formatCurrency(reserva.precioTotal)}">5.99€</td>
+									<td th:text="${#temporals.format(reserva.fechaReserva)}">17-5-2022</td>
+									<td th:text="${reserva.clase.nombreClase}">Spinning</td>
 									<td>
 										<div class="container-fluid mx-auto row">
 											<div class="col-lg-2 col-sm-0"></div>
-											<button class="btn btn-danger col-lg" >Eliminar</button>
+											<a class="btn btn-danger col-lg" th:href="@{/borrar-reserva/{id}(id=${reserva.id})}">Eliminar</a>
 											<div class="col-lg-2 col-sm-0"></div>
 										</div>
 									</td>

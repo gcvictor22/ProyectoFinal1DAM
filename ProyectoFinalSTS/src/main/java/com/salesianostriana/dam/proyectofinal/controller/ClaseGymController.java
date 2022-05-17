@@ -26,7 +26,7 @@ public class ClaseGymController {
 	@GetMapping("/gestionar")
 	public String list(Model model) {
 		model.addAttribute("lista", claseServicio.findAll());
-		model.addAttribute("reserva", reservaServicio.findAll());
+		model.addAttribute("reservas", reservaServicio.findAll());
 		return "gestionar";
 	}
 
