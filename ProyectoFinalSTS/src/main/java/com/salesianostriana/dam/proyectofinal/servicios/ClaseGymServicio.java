@@ -1,6 +1,5 @@
 package com.salesianostriana.dam.proyectofinal.servicios;
 
-import java.util.List;
 
 import org.springframework.stereotype.Service;
 
@@ -18,6 +17,6 @@ import com.salesianostriana.dam.proyectofinal.servicios.base.ServicioBaseImpl;
  *
  */
 @Service
-public class ClaseServicio extends ServicioBaseImpl<ClaseGym, Long, ClaseGymRepository>{
-
+public class ClaseGymServicio extends ServicioBaseImpl<ClaseGym, Long, ClaseGymRepository>{
+	
 }

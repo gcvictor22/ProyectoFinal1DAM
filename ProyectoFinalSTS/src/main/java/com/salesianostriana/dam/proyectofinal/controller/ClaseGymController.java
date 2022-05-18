@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.salesianostriana.dam.proyectofinal.model.ClaseGym;
-import com.salesianostriana.dam.proyectofinal.servicios.ClaseServicio;
+import com.salesianostriana.dam.proyectofinal.servicios.ClaseGymServicio;
 import com.salesianostriana.dam.proyectofinal.servicios.ReservaServicio;
 
 @Controller
 public class ClaseGymController {
 
 	@Autowired
-	private ClaseServicio claseServicio;
+	private ClaseGymServicio claseServicio;
 	
 	@Autowired
 	private ReservaServicio reservaServicio;
@@ -69,4 +69,5 @@ public class ClaseGymController {
 		claseServicio.deleteById(id);
 		return "redirect:/gestionar";
 	}
+	
 }

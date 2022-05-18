@@ -32,24 +32,26 @@
 						<table class="table text-center p-4 bg-white">
 							<thead>
 								<tr>
+									<th scope="col">Imagen</th>
 									<th scope="col uppercase">ID</th>
 									<th scope="col">Nombre</th>
 									<th scope="col">Precio</th>
 									<th scope="col">Horario</th>
 									<th scope="col">Plazas</th>
-									<th scope="col">Imagen</th>
 									<th scope="col">Acciones</th>
 								</tr>
 							</thead>
 							<tbody>
+								<tr>
+
+								</tr>
 								<tr th:each="claseGym : ${lista}">
+									<td class="w-25"><img src="../img/clasespinning.png" th:src="${claseGym.imgClase}" class="rounded w-25" alt=""></td>
 									<th scope="row" th:text="${claseGym.id}">1</th>
 									<td th:text="${claseGym.nombreClase}">Spinning</td>
 									<td th:text="${claseGym.precio}">5.99€</td>
 									<td th:text="${claseGym.horario}">12:30-13:30</td>
 									<td th:text="${claseGym.plazas}">15</td>
-									<td class="w-25"><img src="../img/clasespinning.png" th:src="${claseGym.imgClase}"
-											class="rounded w-25" alt=""></td>
 									<td>
 										<div class="container-fluid mx-auto row">
 											<div class="col-lg-2 col-sm-60"></div>
@@ -57,7 +59,8 @@
 												th:href="@{/gestionar/editar/{id}(id=${claseGym.id})}">Editar</a>
 											<div class="col-lg-2 col-sm-0"></div>
 											<a type="button" class="btn btn-danger col-lg-3" data-bs-toggle="modal"
-												data-bs-target="#myModal" th:attr="data-bs-target='#myModal'+${claseGym.id}">
+												data-bs-target="#myModal"
+												th:attr="data-bs-target='#myModal'+${claseGym.id}">
 												Eliminar
 											</a>
 											<!-- The Modal -->
@@ -118,25 +121,34 @@
 									<th scope="col">Nombre</th>
 									<th scope="col">email</th>
 									<th scope="col">Teléfono</th>
-									<th scope="col">Precio</th>
+									<th scope="col">Precio (Clase)</th>
 									<th scope="col">Fecha de reserva</th>
 									<th scope="col">Clase</th>
 									<th scope="col">Acciones</th>
 								</tr>
 							</thead>
 							<tbody>
+								<tr>
+									<td colspan="8">
+										<form method="GET" th:action="@{/buscar}">
+											<input type="text" placeholder="Nombre del alumno" name="nombre" id="nombre" th:value="${param.nombre}"/>
+											<input type="submit" value="Buscar" />
+										</form>
+									</td>
+								</tr>
 								<tr th:each="reserva : ${reservas}">
 									<th scope="row" th:text="${reserva.id}">1</th>
 									<td th:text="${reserva.nombreUsuario}">Víctor González Carro</td>
 									<td th:text="${reserva.email}">victorgonzaleztr22@gmail.com</td>
 									<td th:text="${reserva.tel}">684318827</td>
-									<td th:text="${#numbers.formatCurrency(reserva.precioTotal)}">5.99€</td>
+									<td th:text="${#numbers.formatCurrency(reserva.clase.precio)}">5.99€</td>
 									<td th:text="${#temporals.format(reserva.fechaReserva)}">17-5-2022</td>
 									<td th:text="${reserva.clase.nombreClase}">Spinning</td>
 									<td>
 										<div class="container-fluid mx-auto row">
 											<div class="col-lg-2 col-sm-0"></div>
-											<a class="btn btn-danger col-lg" th:href="@{/borrar-reserva/{id}(id=${reserva.id})}">Eliminar</a>
+											<a class="btn btn-danger col-lg"
+												th:href="@{/borrar-reserva/{id}(id=${reserva.id})}">Eliminar</a>
 											<div class="col-lg-2 col-sm-0"></div>
 										</div>
 									</td>

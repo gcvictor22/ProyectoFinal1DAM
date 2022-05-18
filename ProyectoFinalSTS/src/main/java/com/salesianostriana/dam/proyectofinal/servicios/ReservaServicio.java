@@ -1,5 +1,7 @@
 package com.salesianostriana.dam.proyectofinal.servicios;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 
 import com.salesianostriana.dam.proyectofinal.model.ReservaClase;
@@ -18,4 +20,9 @@ import com.salesianostriana.dam.proyectofinal.servicios.base.ServicioBaseImpl;
 @Service
 public class ReservaServicio extends ServicioBaseImpl<ReservaClase, Long, ReservaRepository>{
 
+public List<ReservaClase> buscarPorNombre (String nombre){
+		
+		return repositorio.findByNombreUsuarioContainsIgnoreCase(nombre);
+	}
+	
 }
