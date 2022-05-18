@@ -23,8 +23,13 @@
 	<div class="container mx-auto">
 		<img src="../img/error.gif" class="d-block mx-auto w-50" />
 		<h1 class="h1 text-center text-white">¡Oh Oh!</h1>
-		<p class="text-center text-white">No tienes privilegios para acceder a esta funcionalidad</p>
-		<a th:href="@{/inicio}" class="btn btn-primary d-block mx-auto w-25">Volver a inicio</a>
+		<p class="text-center text-white font-weight-bold">Parece que ha ocurrido un error. Pulse el botón para volver a la página de inicio</p>
+		<p class="text-center text-white">Algunos de los posibles fallos son:</p>
+		<ul class="mx-auto text-white d-block w-25">
+			<li>Error 404: Página no encontrada</li>
+			<li>Ha intentado eliminar una clase que tenia reservas programadas</li>
+		</ul>
+		<a th:href="@{/inicio}" class="btn btn-primary d-block mx-auto w-25">Volver al inicio</a>
 	</div>
 </body>
 
