@@ -39,6 +39,7 @@ public class ReservaServicio extends ServicioBaseImpl<ReservaClase, Long, Reserv
 			
 		}
 		
-		return "Se debe aplicar un descuento de "+contador+"€";
+		return "Se han devuelto a "+nombre+" un total de "+contador+"€";
 	}
+	
 }

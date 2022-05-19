@@ -19,7 +19,7 @@
 
 <body class="bg-dark">
     <div class="container mx-auto">
-    	<h1 class="h1">Añadir nueva clase</h1>
+    	<h1 class="h1 text-white text-center mt-5">Añadir/Editar nueva clase</h1>
         <form class="mx-auto mt-5" th:action="${claseGym.id != 0} ? @{/editar/submit} : @{/gestionar/nueva-clase/submit}" th:object="${claseGym}" id="formularioCrear" method="post">
             <input th:if="${claseGym.id != 0}" type="hidden" name="id" th:field="*{id}"/>
             <div class="form-floating">
@@ -48,11 +48,12 @@
             </div>
             <br>
             <div class="mx-auto w-25">
-                <input type="submit" value="Terminar y enviar" name="crearClase" id="enviarInicio"
+                <input type="submit" value="Terminar y enviar" onclick="validarCrearReservar()" name="crearClase" id="enviarCrearEditar"
                     class="btn btn-primary w-100">
             </div>
         </form>
     </div>
+    <script src="../js/validarformularios.js"></script>
 </body>
 
 </html>
