@@ -53,6 +53,15 @@ public class UsuarioRepo {
 					.apellidos("")
 					.fechaNacimiento(LocalDate.of(2022, 5, 13))
 					.build()
+					,
+					Usuario.builder()
+					.username("user")
+					.password("1234")
+					.role("USER")
+					.nombre("Usuario")
+					.apellidos("Usuario")
+					.fechaNacimiento(LocalDate.of(2022, 5, 13))
+					.build()
 				);
 				
 	}

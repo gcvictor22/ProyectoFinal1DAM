@@ -43,7 +43,7 @@
                 </select>
                 <label for="precio" class="mx-2">Reserva</label>
             </div>
-            <input th:if="${reserva.id != 0}" type="hidden" name="precioFinal" th:field="*{precioFinal}"/>
+            <input th:if="${reserva.id != 0}" type="hidden" name="precioFinal" th:field="*{precioFinal}" th:value/>
             <input th:if="${reserva.id != 0}" type="hidden" name="fechaReserva" th:field="*{fechaReserva}"/>
             <div class="form-floating mt-3">
                 <input type="text" name="correoReserva" id="correoReserva" th:field="*{email}" class="form-control" placeholder="Correo" required>

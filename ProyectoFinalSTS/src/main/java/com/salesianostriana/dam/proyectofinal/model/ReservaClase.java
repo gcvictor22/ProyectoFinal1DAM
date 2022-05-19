@@ -22,7 +22,7 @@ import lombok.ToString;
 @Entity
 @Builder
 public class ReservaClase {
-
+	
 	@Id @GeneratedValue
 	private long id;
 	

@@ -20,9 +20,25 @@ import com.salesianostriana.dam.proyectofinal.servicios.base.ServicioBaseImpl;
 @Service
 public class ReservaServicio extends ServicioBaseImpl<ReservaClase, Long, ReservaRepository>{
 
-public List<ReservaClase> buscarPorNombre (String nombre){
+	public List<ReservaClase> buscarPorNombre (String nombre){
 		
 		return repositorio.findByNombreUsuarioContainsIgnoreCase(nombre);
 	}
 	
+	public String mostrarMensajeTresReservas (String nombre) {
+		List<ReservaClase> aux = buscarPorNombre(nombre);
+		int contador = 0;
+		
+		if(aux.size()>=6) {
+			contador += 10;
+			
+		}else if(aux.size()>=3) {
+			contador += 5;
+			
+		}else {
+			
+		}
+		
+		return "Se debe aplicar un descuento de "+contador+"€";
+	}
 }

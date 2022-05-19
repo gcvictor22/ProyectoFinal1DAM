@@ -48,6 +48,7 @@ public class ReservaController {
 	public String buscar(Model model, @RequestParam String nombre) {
 		model.addAttribute("lista", claseServicio.findAll());
 		model.addAttribute("reservas", reservaServicio.buscarPorNombre(nombre));
+		model.addAttribute("precios", (reservaServicio.mostrarMensajeTresReservas(nombre)));
 		return "gestionar";
 	}
 	
