@@ -168,6 +168,11 @@ p {
   #seccion1 {
     width: 100%;
   }
+  
+  #tablaClases, #tablaReservas{
+	overflow-x: scroll;
+	width:400px;
+  }
 }
 
 .clases {

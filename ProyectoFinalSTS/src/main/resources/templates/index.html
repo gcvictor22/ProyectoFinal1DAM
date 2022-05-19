@@ -36,6 +36,13 @@
 			</div>
 			<br>
 			<input type="submit" value="Iniciar sesión" name="enviar" id="enviarInicio" class="btn btn-primary w-100">
+			<p class="text-dark text-center mt-2 bg-transparent">¿No tienes cuenta? <a class="text-primary"
+					th:href="@{/registro}">Registrarme</a></p>
 		</form>
+		<p class="text-center bg-white" sec:authorize="isAuthenticated()">Sesión iniciada con: <span sec:authentication="name"></span></p>
+		<div sec:authorize="isAuthenticated()" class="d-flex justify-content-center w-100">
+			<a class="text-primary btn btn-primary mx-1 text-white" th:href="@{/inicio}">Entrar</a>
+			<a class="text-primary btn btn-danger mx-1 text-white" th:href="@{/logout}">Cerrar Sesión</a>
+		</div>
 	</div>
 </body>

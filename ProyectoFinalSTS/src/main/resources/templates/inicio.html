@@ -41,48 +41,22 @@
 						</li>
 					</ul>
 					<div class="mx-auto d-flex justify-content-around" id="cajaBotonesIniReg">
-						<a href="gestionar.html" th:href="@{/gestionar}" sec:authorize="hasRole('ROLE_ADMIN')" class="btn btn-outline-light">
+						<a href="gestionar.html" th:href="@{/gestionar}" sec:authorize="hasRole('ROLE_ADMIN')"
+							class="btn btn-outline-light">
 							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
 								class="bi bi-patch-check-fill" viewBox="0 0 16 16">
 								<path
 									d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
 							</svg> Gestionar
 						</a>
-						<div class="dropdown">
-							<button class="btn btn-dark border border-primary dropdown-toggle"
-								data-bs-toggle="dropdown">
-								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-									class="bi bi-person-fill text-white" id="user" viewBox="0 0 16 16">
-									<path
-										d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
-								</svg>
-								Mi cuenta
-							</button>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="misclases.html">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-											fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
-											<path fill-rule="evenodd"
-												d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
-											<path
-												d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z" />
-										</svg>
-										Mis clases
-									</a></li>
-								<li><a class="dropdown-item" th:href="@{/logout}">
-										<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-											fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
-											<path fill-rule="evenodd"
-												d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z" />
-											<path fill-rule="evenodd"
-												d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z" />
-										</svg>
-										Cerrar sesion
-									</a>
-								</li>
-							</ul>
-						</div>
-						<a href="registro.html" th:href="@{/registro}" class="btn btn-primary">Registrarme</a>
+						<p class="btn btn-dark border border-primary my-0" data-bs-toggle="tooltip" title="¡Bienvenido a Fit&Go" data-bs-placement="bottom">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+								class="bi bi-person-fill" viewBox="0 0 16 16">
+								<path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+							</svg>
+							<span sec:authentication="name"></span>
+						</p>
+						<a href="registro.html" th:href="@{/logout}" class="btn btn-primary">Cerrar Sesión</a>
 					</div>
 				</div>
 			</div>
@@ -100,7 +74,8 @@
 		<br>
 		<div class="container w-100 ">
 			<h1 class="h1 text-center text-white mb-5">Clases</h1>
-			<img src="../img/reservarClases.png" alt="reservar clases" id="reservarClasesFoto" class="w-50 d-block mx-auto">
+			<img src="../img/reservarClases.png" alt="reservar clases" id="reservarClasesFoto"
+				class="w-50 d-block mx-auto">
 			<a th:href="@{/reservar-clase}" class="d-block w-25 mx-auto btn btn-primary">Reservar mi plaza</a>
 		</div>
 		<br id="sobreNosotros">
