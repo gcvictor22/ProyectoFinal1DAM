@@ -33,7 +33,8 @@
             </div>
             <br>
             <div class="form-floating">
-                <input type="text" name="horario" id="horario" class="form-control" placeholder="Horario" th:field="*{horario}" required>
+                <input type="text" name="horario" id="horario" class="form-control" placeholder="Horario" th:field="*{horario}"
+                pattern="[0-9\-:]{7,11}" title="El formato de horario debe de ser hh:mm-hh:mm" required>
                 <label for="horario">Horario</label>
             </div>
             <br>
