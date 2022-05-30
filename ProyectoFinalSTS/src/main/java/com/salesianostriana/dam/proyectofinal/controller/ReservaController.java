@@ -34,6 +34,7 @@ public class ReservaController {
 	@PostMapping("/nueva-reserva/submit")
 	public String saveClase(@ModelAttribute("reserva") ReservaClase nueva) {
 		nueva.setFechaReserva(LocalDate.now());
+		nueva.setPrecioTotal(nueva.getClase().getPrecio());
 		reservaServicio.save(nueva);
 		return "redirect:/inicio";
 	}
