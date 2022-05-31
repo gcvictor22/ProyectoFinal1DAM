@@ -53,15 +53,17 @@ public class ReservaServicio extends ServicioBaseImpl<ReservaClase, Long, Reserv
 	
 	public boolean permitirReserva (String nombre, LocalDate fecha) {
 		List<ReservaClase> aux = buscarPorNombre(nombre);
+		boolean permitir = true;
 		
 		
 		for (int i = 0; i < aux.size(); i++) {
 			if(aux.get(i).getNombreUsuario().equalsIgnoreCase(nombre) && aux.get(i).getFechaReserva().isEqual(fecha)) {
-				return false;
+				permitir = false;
 			}else {
-				return true;
+				permitir = true;
 			}
 		}
-		return false;
+		return permitir;
 	}
+	
 }

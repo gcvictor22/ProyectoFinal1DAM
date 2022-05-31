@@ -95,6 +95,10 @@ p {
   margin-top: 275px;
 }
 
+#bodyReservaClase{
+	background-image:url(../img/fondocontacto.jpg);
+}
+
 @media screen and (min-width: 1000px) {
   #bodyRegistro {
     margin-top: 10px;
