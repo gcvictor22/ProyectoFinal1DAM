@@ -1,3 +1,6 @@
+document.getElementById("siguiente").addEventListener("click", ampliar);
+document.getElementById("atras").addEventListener("click", reducir);
+
 let width = 0;
 let cont = 0;
 let comprobacion = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
