@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fit&Go · Inicio</title>
+	<link rel="icon" class="rounded" href="../img/FIT&GO.png">
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<!-- JavaScript Bundle with Popper -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+		</script>
+	<!-- Libreria AOS CSS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="../js/index.js" defer></script>
+	<link rel="stylesheet" href="../css/index.css">
+	<link rel="stylesheet" href="../css/tarjetas.css">
+</head>
+
+<body style="background-image: url(../img/fondoindex.jpg);">
+	<div class="container-fluid px-0">
+		<header>
+			<nav class="navbar navbar-expand-sm bg-dark navbar-dark pt-2">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="#"><img src="../img/FIT&GO.png" alt="" class="rounded w-75"></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="collapsibleNavbar">
+						<ul class="navbar-nav d-flex justify-content-around w-100">
+							<li class="nav-item">
+								<a class="nav-link text-center" href="#clasesgym">Clases</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-center" href="#sobreNosotros">Sobre nosotros</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-center" href="#dondeEstamos">Donde Estamos</a>
+							</li>
+						</ul>
+						<div class="mx-auto d-flex justify-content-around" id="cajaBotonesIniReg">
+							<a href="gestionar.html" th:href="@{/gestionar}" sec:authorize="hasRole('ROLE_ADMIN')"
+								class="btn btn-outline-light">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+									class="bi bi-patch-check-fill" viewBox="0 0 16 16">
+									<path
+										d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z" />
+								</svg> Gestionar
+							</a>
+							<p class="btn btn-dark border border-primary my-0" data-bs-toggle="tooltip"
+								title="¡Bienvenido a Fit&Go!" data-bs-placement="bottom">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+									class="bi bi-person-fill" viewBox="0 0 16 16">
+									<path
+										d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+								</svg>
+								<span sec:authentication="name"></span>
+							</p>
+							<a href="registro.html" th:href="@{/logout}" class="btn btn-primary">Cerrar Sesión</a>
+						</div>
+					</div>
+				</div>
+				<div class="barraLectura position-fixed">
+					<div class="progress-container">
+						<div class="progress-bar" id="progressBar"></div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<div class="container-fluid d-flex justify-content-center">
+				<img src="../img/logoIndex.png" alt="fit&go" id="logoIndex" data-aos="zoom-in">
+			</div>
+			<p class="text-justify w-75 mx-auto text-white bg-transparent">
+				¡Hola de nuevo <span sec:authentication="name"></span>! Como siempre, sabes que tienes a tu disposición
+				nuestros mejores especialistas.
+				En Fit&Go siempre queremos que nuestros clientes mantengan la misma ilusión que el primer día que
+				llegaron a
+				nuestras instalaciones. A continuación encontras diferentes apartados, den los cuales podras reservar en
+				las
+				diferentes clases que ofrecen nuestros mejores profesores, entre ellos Alberto Contador (Spinning) y
+				Ester
+				Expósito (Zumba) entre otros. Si eres nuevo y te gustaría conocer un poco más de nuestras instalaciones
+				encontraras otros apartados pensados para ti.
+			</p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h2 class="text-center text-white">Deliza hacia abajo</h2>
+			<br>
+			<p class="text-center bg-transparent w-100">
+				<svg class="arrows">
+					<path class="a1" d="M0 0 L30 32 L60 0"></path>
+					<path class="a2" d="M0 20 L30 52 L60 20"></path>
+					<path class="a3" d="M0 40 L30 72 L60 40"></path>
+				</svg>
+			</p>
+			<br>
+			<br>
+			<br id="clasesgym">
+			<hr class="w-75 mx-auto bg-white">
+			<br>
+			<div class="container w-100" data-aos="flip-right">
+				<h1 class="h1 text-center text-white mb-5">Clases</h1>
+				<img src="../img/reservarClases.png" alt="reservar clases" id="reservarClasesFoto"
+					class="w-50 d-block mx-auto">
+				<a th:href="@{/reservar-clase}" class="d-block w-25 mx-auto btn btn-outline-light">Reservar mi plaza</a>
+			</div>
+			<br id="sobreNosotros">
+			<hr class="w-75 mx-auto bg-white">
+			<br>
+			<div class="container w-100">
+				<h1 class="h1 text-center text-white">Sobre Nosotros</h1>
+				<div class="card-container mx-auto" data-aos="zoom-out">
+
+					<div class="card"
+						style="--image: url('https://termaria.es/images/instalaciones-sala-fitness-sport.jpg'); --angle: -5deg; --x: 5%; --y: 15%; --caption: 'Sala fitness'">
+					</div>
+
+					<div class="card"
+						style="--image: url('https://www.hola.com/imagenes/estar-bien/20191121154053/ejercicios-complementar-clases-spinning-lb/0-746-190/complementar-clases-spinning-t.jpg'); --angle: -1deg; --x: -10%; --y: -20%; --caption: 'Sala de spinning'">
+					</div>
+
+					<div class="card"
+						style="--image: url('https://susociodenegocios.com/wp-content/uploads/2014/06/clases-de-zumba.jpg'); --angle: -4deg; --x: -20%; --y: 5%; --caption: 'Clase de zumba'">
+					</div>
+
+					<div class="card"
+						style="--image: url('https://media-cdn.tripadvisor.com/media/photo-s/0a/96/5b/97/spa-gym-malecon-zarautz.jpg'); --angle: 7deg; --x: 10%; --y: -7%; --caption: 'Spa y sala de relax'">
+					</div>
+
+				</div>
+			</div>
+			<p class="text-justify w-75 mx-auto text-white bg-transparent">
+				Las imagenes mostradas en la parte superior pertenecen a algunas de nuestras diferentes clases. En
+				dichas
+				clases siempre hay un monitor encargado de dirigir la clase y atender cualquier tipo de ayuda,
+				indicación
+				o sugerencia. Si quieres participar el cualquiera de nuestras clases puedes hacerlo reservando tu plaza
+				en el apartado que encontraras justo encima. Puedes deslizar la pagina hacia arriba o pulsar el botón
+				"reserva"
+				que encontraras justo en la parte superior de la página, en la cabecera.
+			</p>
+			<br id="dondeEstamos">
+			<hr class="w-75 mx-auto bg-white">
+			<br>
+			<div class="container w-100">
+				<h1 class="h1 text-center text-white">Donde estamos</h1>
+				<br>
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.892441903638!2d-5.98081788471974!3d37.39237584184073!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126ea8aebd98e5%3A0x6d678c624e01c69a!2sGO%20fit%20Sevilla!5e0!3m2!1ses!2ses!4v1652079742703!5m2!1ses!2ses"
+					width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+					referrerpolicy="no-referrer-when-downgrade" data-aos="fade-down" data-aos-easing="linear"
+					data-aos-duration="1500"></iframe>
+				<br>
+				<br>
+				<p class="bg-transparent text-white">
+					Si quiere conocer nuestras instalaciones puedes visitarnos en la dirección que se muestra en el
+					mapa,
+					justo en el edificio que linda con el C.D. Centro Histórico. Si no puede llegar hasta aqui o no
+					dispone
+					de tiempo puede contactar con nosotro via email <a
+						href="mailto:fit&go@gmail.com">fit&go@gmail.com</a>
+					o via telefónica llamando al <a href="tel:+3412345678">+34 123 456 789</a>
+				</p>
+			</div>
+			<input type="hidden" id="siguiente">
+			<input type="hidden" id="atras">
+		</main>
+		<footer class="container-fluid bg-dark py-3">
+			<div class="row" id="indexfooter">
+				<a href="info.html" th:href="@{/info}" class="text-white col-lg-2 col-sm-4 text-center">Más
+					información</a>
+				<a href="politica.html" th:href="@{/politica}" class="text-white col-lg-2 col-sm-4 text-center"
+					target="_blank">Política de
+					privacidad</a>
+				<p class="text-secondary mx-0 bg-transparent col-lg-4 col-sm-4">© 2022 Fit & Go. TODOS LOS DERECHOS
+					RESERVADOS.</p>
+			</div>
+		</footer>
+	</div>
+	<!-- Libreria AOS JS-->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>
