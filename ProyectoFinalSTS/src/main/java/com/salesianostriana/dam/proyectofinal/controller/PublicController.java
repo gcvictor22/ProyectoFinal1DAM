@@ -22,11 +22,6 @@ public class PublicController {
 		return "info";
 	}
 	
-	@GetMapping("/registro")
-	public String registro() {
-		return "registro";
-	}
-	
 	@GetMapping("/politica")
 	public String politica() {
 		return "politica";

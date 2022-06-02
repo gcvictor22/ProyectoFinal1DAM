@@ -21,6 +21,11 @@ import com.salesianostriana.dam.proyectofinal.servicios.base.ServicioBaseImpl;
 @Service
 public class ReservaServicio extends ServicioBaseImpl<ReservaClase, Long, ReservaRepository>{
 
+	public ReservaServicio(ReservaRepository repo) {
+		super(repo);
+		// TODO Auto-generated constructor stub
+	}
+
 	public List<ReservaClase> buscarPorNombre (String nombre){
 		
 		return repositorio.findByNombreUsuarioContainsIgnoreCase(nombre);
