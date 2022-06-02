@@ -1,6 +1,5 @@
 package com.salesianostriana.dam.proyectofinal.model;
 
-import java.sql.Date;
 import java.util.Arrays;
 import java.util.Collection;
 
