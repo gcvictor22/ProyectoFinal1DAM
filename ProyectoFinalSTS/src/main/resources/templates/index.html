@@ -22,6 +22,7 @@
 	<div class="container bg-white border p-4 rounded" id="cajaInicio">
 		<h1 class="h2 text-center mb-4">Inicio de Sesión</h1>
 		<p th:if="${loginError}" class="text-danger bg-transparent">Error en el nombre de usuario y/o contraseña</p>
+		
 		<form form method="post" th:action="@{/login}" sec:authorize="!isAuthenticated()" class="mx-auto"
 			id="formularioInicio">
 			<div class="form-floating">
