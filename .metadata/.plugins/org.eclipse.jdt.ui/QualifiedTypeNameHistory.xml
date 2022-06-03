@@ -6,5 +6,7 @@
     <fullyQualifiedTypeName name="org.yaml.snakeyaml.events.Event.ID"/>
     <fullyQualifiedTypeName name="java.util.Optional"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="org.springframework.security.core.Authentication"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="antlr.collections.List"/>
 </qualifiedTypeNameHistroy>

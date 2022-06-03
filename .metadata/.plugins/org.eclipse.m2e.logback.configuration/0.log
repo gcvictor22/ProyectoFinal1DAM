@@ -676,3 +676,290 @@
 2022-06-03 12:21:16,883 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
 2022-06-03 12:21:16,893 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-06-03 12:21:16,893 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 19:47:50,473 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-06-03 19:48:01,979 [Worker-4: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.salesianostriana.dam:SeguridadBasica02:0.0.1-SNAPSHOT @ C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\pom.xml.
+2022-06-03 19:48:02,841 [Worker-4: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProyectoFinalSTS/src/main/java
+2022-06-03 19:48:02,841 [Worker-4: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProyectoFinalSTS/src/main/resources
+2022-06-03 19:48:02,842 [Worker-4: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProyectoFinalSTS/src/main/resources
+2022-06-03 19:48:02,844 [Worker-4: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProyectoFinalSTS/src/test/java
+2022-06-03 19:48:03,072 [Worker-4: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 2 sec
+2022-06-03 19:48:05,359 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 19:48:05,359 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 19:48:05,362 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 19:48:05,375 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 19:48:05,454 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 19:48:05,454 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 19:48:05,454 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 19:48:39,291 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 19:48:39,291 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 19:48:39,297 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 19:48:39,304 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 19:48:39,313 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 19:48:39,313 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 19:48:39,313 [Worker-7: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 19:49:31,388 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 19:49:31,388 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 19:49:31,391 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 19:49:31,398 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 19:49:31,407 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 19:49:31,407 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 19:49:31,407 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 19:49:35,795 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 19:49:35,796 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 19:49:35,799 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 19:49:35,805 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 19:49:35,814 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 19:49:35,814 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 19:49:35,814 [Worker-1: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:05:34,115 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:05:34,115 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:05:34,117 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:05:34,140 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:05:34,152 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:05:34,152 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:05:34,153 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:06:05,277 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:06:05,277 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:06:05,279 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:06:05,291 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:06:05,299 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:06:05,299 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:06:05,299 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:06:39,894 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:06:39,894 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:06:39,896 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:06:39,901 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:06:39,909 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:06:39,909 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:06:39,909 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:08:07,015 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:08:07,015 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:08:07,017 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:08:07,024 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:08:07,033 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:08:07,033 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:08:07,033 [Worker-14: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:08:13,967 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:08:13,967 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:08:13,969 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:08:13,973 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:08:13,980 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:08:13,980 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:08:13,981 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:08:16,031 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:08:16,032 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:08:16,034 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:08:16,039 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:08:16,046 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:08:16,046 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:08:16,047 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:08:52,421 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:08:52,422 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:08:52,424 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:08:52,429 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:08:52,437 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:08:52,437 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:08:52,437 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:08:56,658 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:08:56,658 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:08:56,660 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:08:56,665 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:08:56,671 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:08:56,672 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:08:56,672 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:09:06,076 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:09:06,076 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:09:06,078 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:09:06,083 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:09:06,090 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:09:06,091 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:09:06,091 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:10:35,674 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:10:35,675 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:10:35,676 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:10:35,697 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:10:35,704 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:10:35,704 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:10:35,704 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:11:16,839 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:11:16,839 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:11:16,841 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:11:16,862 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:11:16,870 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:11:16,870 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:11:16,870 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:14:34,408 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:14:34,408 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:14:34,410 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:14:34,417 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:14:34,425 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:14:34,425 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:14:34,425 [Worker-3: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:15:00,743 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:15:00,743 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:15:00,746 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:15:00,753 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:15:00,760 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:15:00,760 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:15:00,760 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:16:33,212 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:16:33,212 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:16:33,215 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:16:33,219 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:16:33,225 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:16:33,225 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:16:33,225 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:21:39,595 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:21:39,595 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:21:39,597 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:21:39,603 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:21:39,610 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:21:39,610 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:21:39,610 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:22:08,957 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:22:08,957 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:22:08,959 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:22:08,965 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:22:08,972 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:22:08,972 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:22:08,972 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:22:12,796 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:22:12,796 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:22:12,798 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:22:12,803 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:22:12,809 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:22:12,810 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:22:12,810 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:23:47,081 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:23:47,081 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:23:47,082 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:23:47,087 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:23:47,094 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:23:47,094 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:23:47,094 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:25:37,039 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:25:37,039 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:25:37,042 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:25:37,050 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:25:37,057 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:25:37,057 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:25:37,057 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:25:59,479 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:25:59,479 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:25:59,481 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:25:59,486 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:25:59,493 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:25:59,493 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:25:59,493 [Worker-19: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:28:29,909 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:28:29,909 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:28:29,911 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:28:29,916 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:28:29,923 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:28:29,923 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:28:29,923 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:28:58,918 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:28:58,918 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:28:58,920 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:28:58,926 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:28:58,943 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:28:58,943 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:28:58,943 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:30:18,740 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:30:18,740 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:30:18,742 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:30:18,746 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:30:18,753 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:30:18,753 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:30:18,753 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:31:45,338 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:31:45,338 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:31:45,340 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:31:45,348 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:31:45,356 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:31:45,356 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:31:45,356 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:32:01,797 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:32:01,797 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:32:01,799 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:32:01,805 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:32:01,812 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:32:01,812 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:32:01,812 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:33:07,532 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:33:07,532 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:33:07,534 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:33:07,540 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:33:07,546 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:33:07,546 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:33:07,547 [Worker-17: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:33:45,817 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:33:45,817 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:33:45,819 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:33:45,824 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:33:45,831 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:33:45,831 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:33:45,831 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:36:04,443 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:36:04,443 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:36:04,445 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:36:04,450 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:36:04,460 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:36:04,460 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:36:04,460 [Worker-27: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:36:32,824 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:36:32,824 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:36:32,826 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:36:32,852 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:36:32,859 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:36:32,859 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:36:32,859 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:37:24,352 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:37:24,352 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:37:24,354 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:37:24,359 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:37:24,365 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:37:24,365 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:37:24,365 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:47:23,842 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:47:23,842 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:47:23,844 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:47:23,857 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:47:23,864 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:47:23,864 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:47:23,864 [Worker-24: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:48:19,449 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:48:19,449 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:48:19,451 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:48:19,455 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:48:19,462 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:48:19,462 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:48:19,462 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:48:42,547 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:48:42,548 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:48:42,549 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:48:42,557 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:48:42,564 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:48:42,564 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:48:42,564 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 20:49:17,587 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:49:17,588 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:49:17,589 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 20:49:17,594 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 20:49:17,600 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 20:49:17,600 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 20:49:17,600 [Worker-31: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 21:03:07,013 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 21:03:07,013 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 21:03:07,015 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 21:03:07,023 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 21:03:07,030 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 21:03:07,030 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 21:03:07,030 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-03 21:03:10,684 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 21:03:10,684 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 21:03:10,686 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-03 21:03:10,692 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-03 21:03:10,698 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-03 21:03:10,698 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-03 21:03:10,698 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
