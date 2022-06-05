@@ -963,3 +963,17 @@
 2022-06-03 21:03:10,698 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-06-03 21:03:10,698 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2022-06-03 21:03:10,698 [Worker-37: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
+2022-06-06 00:11:10,180 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-06-06 00:11:20,471 [Worker-9: Importing Maven projects] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.salesianostriana.dam:SeguridadBasica02:0.0.1-SNAPSHOT @ C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\pom.xml.
+2022-06-06 00:11:21,576 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProyectoFinalSTS/src/main/java
+2022-06-06 00:11:21,576 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProyectoFinalSTS/src/main/resources
+2022-06-06 00:11:21,577 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /ProyectoFinalSTS/src/main/resources
+2022-06-06 00:11:21,578 [Worker-9: Importing Maven projects] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /ProyectoFinalSTS/src/test/java
+2022-06-06 00:11:21,808 [Worker-9: Importing Maven projects] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 2 sec
+2022-06-06 00:11:24,315 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-06 00:11:24,315 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-06 00:11:24,318 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-06-06 00:11:24,331 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 34 resources
+2022-06-06 00:11:24,406 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-06 00:11:24,406 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-06-06 00:11:24,406 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\victo\OneDrive\Escritorio\proyectoFinal1DAM\ProyectoFinalSTS\src\test\resources
