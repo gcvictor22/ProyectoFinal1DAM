@@ -1,0 +1,5 @@
+package com.salesianostriana.dam.proyectofinal.repositorios;
+
+public interface Usuario2Repositorio extends JpaRepository<Usuario, Long>{
+
+}

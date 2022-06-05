@@ -1,0 +1,21 @@
+package com.salesianostriana.dam.proyectofinal.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.salesianostriana.dam.proyectofinal.servicios.Usuario2Servicio;
+
+@Controller
+public class RegistroController {
+
+	@Autowired
+	private Usuario2Servicio u2S;
+	
+	@PostMapping("/registro")
+	public String registro() {
+		
+		return "registro";
+	}
+	
+}

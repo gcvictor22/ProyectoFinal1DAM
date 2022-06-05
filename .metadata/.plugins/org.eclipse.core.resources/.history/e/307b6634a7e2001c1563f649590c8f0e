@@ -1,0 +1,42 @@
+package com.salesianostriana.dam.proyectofinal.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.salesianostriana.dam.proyectofinal.model.Usuario2;
+import com.salesianostriana.dam.proyectofinal.servicios.Usuario2Servicio;
+
+@Controller
+public class PublicController {
+	
+	@Autowired
+	private Usuario2Servicio u2S;
+	
+	@GetMapping("/")
+	public String welcome(Usuario2 nuevo) {
+		u2S.save(nuevo);
+		return "index";
+	}
+
+	@GetMapping("/error")
+	public String error() {
+		return "error";
+	}
+	
+	@GetMapping("/info")
+	public String info() {
+		return "info";
+	}
+	
+	@GetMapping("/registro")
+	public String registro() {
+		return "registro";
+	}
+	
+	@GetMapping("/politica")
+	public String politica() {
+		return "politica";
+	}
+
+}
