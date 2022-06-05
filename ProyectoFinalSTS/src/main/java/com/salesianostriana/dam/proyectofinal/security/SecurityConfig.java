@@ -84,15 +84,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	public CommandLineRunner init(Usuario2Servicio servicio, BCryptPasswordEncoder passwordEncoder) {
     	return args -> {
     		Usuario2 u = new Usuario2();
-			u.setAdmin(false);
-			u.setNombre("Luis Miguel");
-			u.setApellido1("López");
-			u.setApellido2("Magaña");
-			u.setTelefono("123456789");
-			u.setEmail("luismi.lopez@email.com");
-			u.setContrasenha(passwordEncoder.encode("1234"));
-			u.setTarjeta("1234567891234567");
-			u.setFechaCaducidad("2022-06");
+			u.setAdmin(true);
+			u.setNombre("admin");
+			u.setApellido1("admin");
+			u.setApellido2("admin");
+			u.setTelefono("admin");
+			u.setEmail("admin");
+			u.setContrasenha(passwordEncoder.encode("admin"));
+			u.setTarjeta("admin");
+			u.setFechaCaducidad("admin");
 			u.setCvv(132);
 			
 			servicio.save(u);
