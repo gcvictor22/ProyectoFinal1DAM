@@ -10,12 +10,10 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 
 import com.salesianostriana.dam.proyectofinal.model.Usuario2;
 import com.salesianostriana.dam.proyectofinal.servicios.Usuario2Servicio;
 
-import antlr.collections.List;
 import lombok.RequiredArgsConstructor;
 
 @Configuration
@@ -23,13 +21,11 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
+	@Autowired
 	private final UserDetailsService userDetailsService;
-	
-    @Autowired
-    private UsuarioRepo usuarios;
 
 	@Bean
-	public PasswordEncoder passwordEncoder() {
+	public BCryptPasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
 
@@ -81,7 +77,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     */
     
     @Bean
-	public CommandLineRunner init(Usuario2Servicio servicio, BCryptPasswordEncoder passwordEncoder) {
+	public CommandLineRunner init(Usuario2Servicio servicio) {
     	return args -> {
     		Usuario2 u = new Usuario2();
 			u.setAdmin(true);
@@ -90,10 +86,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			u.setApellido2("admin");
 			u.setTelefono("admin");
 			u.setEmail("admin");
-			u.setContrasenha(passwordEncoder.encode("admin"));
+			u.setContrasenha("admin");
 			u.setTarjeta("admin");
 			u.setFechaCaducidad("admin");
-			u.setCvv(132);
+			u.setCvv(123);
 			
 			servicio.save(u);
     	};

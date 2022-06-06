@@ -8,18 +8,21 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@Configuration
+@EnableWebSecurity
 @Data
 @NoArgsConstructor
 @Entity
-@Builder
 public class Usuario2 implements UserDetails {
 	
 	/**
@@ -81,8 +84,9 @@ public class Usuario2 implements UserDetails {
 
 	@Override
 	public String getPassword() {
-		// TODO Auto-generated method stub
-		return contrasenha;
+		
+		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+		return passwordEncoder.encode(contrasenha);
 	}
 	
 	@Override
