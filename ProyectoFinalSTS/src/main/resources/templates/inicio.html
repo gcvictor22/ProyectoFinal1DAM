@@ -59,7 +59,7 @@
 									<path
 										d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
 								</svg>
-								<span sec:authentication="name"></span>
+								<span th:text="${nombreUsuario}"></span><span th:text="${ap1}"></span><span th:text="${ap2}"></span>
 							</p>
 							<a href="registro.html" th:href="@{/logout}" class="btn btn-primary">Cerrar Sesión</a>
 						</div>
@@ -77,7 +77,7 @@
 				<img src="../img/logoIndex.png" alt="fit&go" id="logoIndex" data-aos="zoom-in">
 			</div>
 			<p class="text-justify w-75 mx-auto text-white bg-transparent">
-				¡Hola de nuevo <span sec:authentication="name"></span>! Como siempre, sabes que tienes a tu disposición
+				¡Hola de nuevo <span th:text="${nombreUsuario}"></span>! Como siempre, sabes que tienes a tu disposición
 				nuestros mejores especialistas.
 				En Fit&Go siempre queremos que nuestros clientes mantengan la misma ilusión que el primer día que
 				llegaron a

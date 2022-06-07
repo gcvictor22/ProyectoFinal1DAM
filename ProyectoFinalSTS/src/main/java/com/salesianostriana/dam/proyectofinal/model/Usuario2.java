@@ -7,19 +7,17 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
-import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
-@Configuration
-@EnableWebSecurity
 @Data
 @NoArgsConstructor
 @Entity
@@ -85,8 +83,7 @@ public class Usuario2 implements UserDetails {
 	@Override
 	public String getPassword() {
 		
-		BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-		return passwordEncoder.encode(contrasenha);
+		return contrasenha;
 	}
 	
 	@Override
@@ -113,4 +110,8 @@ public class Usuario2 implements UserDetails {
 		return true;
 	}
 	
+	@ManyToOne
+	@ToString.Exclude
+	@EqualsAndHashCode.Exclude
+	private ReservaClase reservasClases;
 }

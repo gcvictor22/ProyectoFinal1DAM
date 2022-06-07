@@ -82,14 +82,14 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     		Usuario2 u = new Usuario2();
 			u.setAdmin(true);
 			u.setNombre("admin");
-			u.setApellido1("admin");
-			u.setApellido2("admin");
-			u.setTelefono("admin");
+			u.setApellido1("");
+			u.setApellido2("");
+			u.setTelefono("000000000");
 			u.setEmail("admin");
 			u.setContrasenha("admin");
-			u.setTarjeta("admin");
-			u.setFechaCaducidad("admin");
-			u.setCvv(123);
+			u.setTarjeta("0000000000000000");
+			u.setFechaCaducidad("00/0000");
+			u.setCvv(000);
 			
 			servicio.save(u);
     	};

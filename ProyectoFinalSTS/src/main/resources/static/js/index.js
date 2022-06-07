@@ -4,13 +4,15 @@ document.getElementById("atras").addEventListener("click", reducir);
 let width = 0;
 let cont = 0;
 let comprobacion = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+let textoError = document.getElementById("textoError");
+textoError.style.visibility = 'hidden';
 
 urlParams = new URLSearchParams(window.location.search);
 
 if (urlParams.get('menu') == 'clases') {
     let desplegable1 = document.getElementById("collapseOne");
     desplegable1.className = 'collapse show'
-}else if (urlParams.get('menu') == 'reservas'){
+} else if (urlParams.get('menu') == 'reservas') {
     let desplegable2 = document.getElementById("collapseTwo");
     desplegable2.className = 'collapse show'
 }
@@ -48,14 +50,22 @@ function ampliar() {
     document.getElementById("telObtenido").innerHTML = "Teléfono: " + compTelefono;
 
     if (nom.length == 0 || ap1.length == 0 || ap2.length == 0 || telefono.length == 0 || correo.length == 0 || pass.length == 0 || pass2.length == 0) {
-        alert('Faltan datos por rellenar');
+        document.getElementById("nombre").style.borderBottom = "2px solid #dc3545";
+        document.getElementById("apellido1").style.borderBottom = "2px solid #dc3545";
+        document.getElementById("apellido2").style.borderBottom = "2px solid #dc3545";
+        document.getElementById("contrasenha1").style.borderBottom = "2px solid #dc3545";
+        document.getElementById("contrasenha2").style.borderBottom = "2px solid #dc3545";
+        document.getElementById("correo").style.borderBottom = "2px solid #dc3545";
+        document.getElementById("telefono").style.borderBottom = "2px solid #dc3545";
+        textoError.style.visibility = "visible";
 
     } else if (telefono.length != 9) {
         alert('El teléfono introducido no cumple con el formato esperado');
 
     } else if (!comprobacion.exec(correo) && correo.length == 0) {
-		alert('El correo introducido no es válido')
-    
+        document.getElementById("correo").style.borderBottom = "2px solid #dc3545";
+        textoError.style.visibility = "visible";
+
     } else if (pass !== pass2) {
         alert('Las contraseñas deben coincidir')
 
@@ -70,8 +80,20 @@ function ampliar() {
 
         document.getElementById("atras").style.visibility = 'visible';
 
+        document.getElementById("nombre").style.borderBottom = "2px solid #caccce";
+        document.getElementById("apellido1").style.borderBottom = "2px solid #caccce";
+        document.getElementById("apellido2").style.borderBottom = "2px solid #caccce";
+        document.getElementById("contrasenha1").style.borderBottom = "2px solid #caccce";
+        document.getElementById("contrasenha2").style.borderBottom = "2px solid #caccce";
+        document.getElementById("correo").style.borderBottom = "2px solid #caccce";
+        document.getElementById("telefono").style.borderBottom = "2px solid #caccce";
+        textoError.style.visibility = "hidden";
+
     } else if (tarj.length == 0 || fechaCad.length == 0 || cvv.length == 0) {
-        alert('Faltan datos por rellenar o no estan completos');
+        document.getElementById("numTarjeta").style.borderBottom = "2px solid #dc3545";
+        document.getElementById("fechaCaducidad").style.borderBottom = "2px solid #dc3545";
+        document.getElementById("cvv").style.borderBottom = "2px solid #dc3545";
+        textoError.style.visibility="visible";
 
     } else if (cont == 1 && tarj.length != 0 && fechaCad.length != 0 && cvv.length != 0) {
         cont++;
@@ -84,6 +106,11 @@ function ampliar() {
 
         document.getElementById("siguiente").style.visibility = 'hidden';
         document.getElementById("enviar").style.visibility = 'visible';
+
+        document.getElementById("numTarjeta").style.borderBottom = "2px solid #caccce";
+        document.getElementById("fechaCaducidad").style.borderBottom = "2px solid #caccce";
+        document.getElementById("cvv").style.borderBottom = "2px solid #caccce";
+        textoError.style.visibility = "hidden";
     }
     barra.style.width = width + '%';
 }

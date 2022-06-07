@@ -23,13 +23,10 @@
         <form class="mx-auto mt-3 row" th:action="@{/nueva-reserva/submit}" th:object="${reserva}" method="post">
             <input th:if="${reserva.id != 0}" type="hidden" name="id" th:field="*{id}"/> 
             <div class="form-floating">
-                <input type="text" name="nombreReserva" id="nombreReserva" class="form-control"
-                    placeholder="Nombre completo" th:field="*{nombreUsuario}" required>
-                <label for="nombreClase" class="mx-2">Nombre completo</label>
+                <p class="bg-transparent text-primary border p-3 rounded">Nombre: <span class="text-dark mx-3" th:text="${nombreUsuarioCompleto}"></span></p>
             </div>
             <div class="form-floating col-lg-5 col-sm-12 mt-3">
-                <input type="tel" name="telefono" id="telefono" class="form-control" placeholder="Teléfono" th:field=*{tel} required maxlength="9" minlength="9" pattern="[0-9]{9}" title="Fit % Go solo acepta teléfonos nacionales (Españita)">
-                <label for="horario" class="mx-2">Teléfono</label>
+                <p class="bg-transparent text-primary border p-3 rounded">Teléfono: <span class="text-dark mx-3" th:text="${telefono}"></span></p>
             </div>
             <div class="col-lg-2 col-sm-0 mt-3"></div>
             <div class="form-floating col-lg-5 col-sm-12 mt-3">
@@ -37,12 +34,11 @@
                     <option value="reservaSpinning" th:each="claseGym : ${lista}" th:value="${claseGym.id}" th:text="${claseGym.nombreClase}">Spinning</option>
                 	<input th:if="${reserva.id != 0}" type="hidden" name="precioTotal" th:field="*{precioTotal}"/>
                 </select>
-                <label for="precio" class="mx-2">Reserva</label>
+                <label for="precio" class="mx-2">Clase</label>
             </div>
             <input th:if="${reserva.id != 0}" type="hidden" name="fechaReserva" th:field="*{fechaReserva}"/>
             <div class="form-floating mt-3">
-                <input type="email" name="correoReserva" id="correoReserva" th:field="*{email}" class="form-control" placeholder="Correo" required>
-                <label for="correoReserva" class="mx-2">Correo</label>
+                <p class="bg-transparent text-primary border p-3 rounded">Correo: <span class="text-dark mx-3" th:text="${correo}"></span></p>
             </div>
             <div class="mx-auto w-25 mt-3">
                 <input type="submit" value="Reservar plaza" onclick="validarReservar()" name="reservarPlaza" id="reservarPlaza"
