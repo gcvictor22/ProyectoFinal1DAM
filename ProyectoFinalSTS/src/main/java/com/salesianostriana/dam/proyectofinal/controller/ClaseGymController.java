@@ -1,8 +1,11 @@
 package com.salesianostriana.dam.proyectofinal.controller;
 
+import java.time.LocalDate;
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -11,12 +14,16 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import com.salesianostriana.dam.proyectofinal.model.ClaseGym;
+import com.salesianostriana.dam.proyectofinal.model.ReservaClase;
 import com.salesianostriana.dam.proyectofinal.servicios.ClaseGymServicio;
 import com.salesianostriana.dam.proyectofinal.servicios.ReservaServicio;
 
 @Controller
 public class ClaseGymController {
 
+	@DateTimeFormat(pattern = "dd-MM-yyyy")
+	private LocalDate hoy = LocalDate.now();
+	
 	@Autowired
 	private ClaseGymServicio claseServicio;
 	
@@ -25,8 +32,18 @@ public class ClaseGymController {
 
 	@GetMapping("/gestionar")
 	public String list(Model model) {
+		
+		List<ReservaClase> aux = reservaServicio.findAll();
+		
+		for (int i = 0; i < aux.size(); i++) {
+			if(aux.get(i).getFechaReserva().compareTo(hoy) < 0) {
+				reservaServicio.delete(aux.get(i));
+			}
+		}
+		
 		model.addAttribute("lista", claseServicio.findAll());
 		model.addAttribute("reservas", reservaServicio.findAll());
+		
 		return "gestionar";
 	}
 

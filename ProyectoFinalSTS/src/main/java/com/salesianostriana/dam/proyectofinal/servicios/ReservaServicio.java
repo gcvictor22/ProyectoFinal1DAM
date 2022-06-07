@@ -1,6 +1,5 @@
 package com.salesianostriana.dam.proyectofinal.servicios;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import org.springframework.stereotype.Service;
@@ -54,21 +53,6 @@ public class ReservaServicio extends ServicioBaseImpl<ReservaClase, Long, Reserv
 		}
 		
 		return "A pagar: "+total+"€; Se han devuelto a "+nombre+" un total de "+contador+"€";
-	}
-	
-	public boolean permitirReserva (String nombre, LocalDate fecha) {
-		List<ReservaClase> aux = buscarPorNombre(nombre);
-		boolean permitir = true;
-		
-		
-		for (int i = 0; i < aux.size(); i++) {
-			if(aux.get(i).getNombreUsuario().equalsIgnoreCase(nombre) && aux.get(i).getFechaReserva().isEqual(fecha)) {
-				permitir = false;
-			}else {
-				permitir = true;
-			}
-		}
-		return permitir;
 	}
 	
 }

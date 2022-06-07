@@ -36,7 +36,7 @@
                 </select>
                 <label for="precio" class="mx-2">Clase</label>
             </div>
-            <input th:if="${reserva.id != 0}" type="hidden" name="fechaReserva" th:field="*{fechaReserva}"/>
+            <input th:if="${reserva.id != 0}" type="hidden" name="fechaReserva" th:field="*{#dates.format(fechaReserva, 'dd-MM-yyyy')}"/>
             <div class="form-floating mt-3">
                 <p class="bg-transparent text-primary border p-3 rounded">Correo: <span class="text-dark mx-3" th:text="${correo}"></span></p>
             </div>

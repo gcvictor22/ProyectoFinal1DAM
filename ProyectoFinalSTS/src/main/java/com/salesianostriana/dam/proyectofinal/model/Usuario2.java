@@ -1,26 +1,33 @@
 package com.salesianostriana.dam.proyectofinal.model;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Data
+@AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Builder
 public class Usuario2 implements UserDetails {
 	
 	/**
@@ -110,8 +117,9 @@ public class Usuario2 implements UserDetails {
 		return true;
 	}
 	
-	@ManyToOne
+	@Builder.Default
 	@ToString.Exclude
 	@EqualsAndHashCode.Exclude
-	private ReservaClase reservasClases;
+	@OneToMany(mappedBy = "usuarios", fetch = FetchType.EAGER)
+	private List <Usuario2> usuarios = new ArrayList();
 }

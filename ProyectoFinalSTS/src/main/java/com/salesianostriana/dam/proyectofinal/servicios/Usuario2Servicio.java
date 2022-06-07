@@ -30,6 +30,4 @@ public class Usuario2Servicio extends ServicioBaseImpl<Usuario2, Long, Usuario2R
 		return super.save(a);
 	}
 	
-	
-	
 }
