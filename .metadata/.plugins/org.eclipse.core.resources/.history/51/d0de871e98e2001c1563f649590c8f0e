@@ -1,7 +1,0 @@
-package com.salesianostriana.dam.proyectofinal.servicios;
-
-import org.yaml.snakeyaml.events.Event.ID;
-
-public class Usuario2Servicio extends ServicioBaseImpl<T, ID, R>{
-
-}

@@ -1,9 +1,0 @@
-package com.salesianostriana.dam.proyectofinal.servicios;
-
-import org.springframework.security.core.userdetails.UserDetailsService;
-
-@Service
-@RequiredConstructor
-public class UserDetailsServiceImpl implements UserDetailsService{
-
-}
