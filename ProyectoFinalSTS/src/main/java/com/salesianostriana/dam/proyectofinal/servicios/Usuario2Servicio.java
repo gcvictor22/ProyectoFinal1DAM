@@ -11,7 +11,7 @@ import com.salesianostriana.dam.proyectofinal.servicios.base.ServicioBaseImpl;
 
 @Service
 public class Usuario2Servicio extends ServicioBaseImpl<Usuario2, Long, Usuario2Repository>{
-
+	
 	public Usuario2Servicio(Usuario2Repository repo) {
 		super(repo);
 	}
@@ -29,5 +29,4 @@ public class Usuario2Servicio extends ServicioBaseImpl<Usuario2, Long, Usuario2R
 		
 		return super.save(a);
 	}
-	
 }

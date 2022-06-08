@@ -28,6 +28,5 @@ public class AdminController {
     	model.addAttribute("usuario", elUsuario.get());
         return "admin/index";
     }
-
-
+    
 }
