@@ -17,6 +17,8 @@ import com.salesianostriana.dam.proyectofinal.model.Usuario2;
 import com.salesianostriana.dam.proyectofinal.servicios.ClaseGymServicio;
 import com.salesianostriana.dam.proyectofinal.servicios.ReservaServicio;
 
+import java.util.List;
+
 @Controller
 public class ReservaController {
 
@@ -36,9 +38,23 @@ public class ReservaController {
 		model.addAttribute("lista", claseServicio.findAll());
 		return "formularioReserva";
 	}
+	
+	@GetMapping("/reservar-clase-error")
+	public String showFormError(Model model, @AuthenticationPrincipal Usuario2 usuario) {
+		model.addAttribute("nombreUsuarioCompleto",
+				usuario.getNombre() + " " + usuario.getApellido1() + " " + usuario.getApellido2());
+		model.addAttribute("telefono", usuario.getTelefono());
+		model.addAttribute("correo", usuario.getEmail());
+		model.addAttribute("reserva", new ReservaClase());
+		model.addAttribute("lista", claseServicio.findAll());
+		model.addAttribute("sinPlazas", true);
+		return "formularioReserva";
+	}
 
 	@PostMapping("/nueva-reserva/submit")
 	public String saveClase(@ModelAttribute("reserva") ReservaClase nueva, @AuthenticationPrincipal Usuario2 usuario) {
+		
+		List <ReservaClase> aux = reservaServicio.findAll();
 		
 		nueva.setNombreUsuario(usuario.getNombre() + " " + usuario.getApellido1() + " " + usuario.getApellido2());
 		nueva.setTel(usuario.getTelefono());
@@ -46,6 +62,12 @@ public class ReservaController {
 		nueva.setFechaReserva(LocalDate.now());
 		nueva.setPrecioTotal(nueva.getClase().getPrecio());
 		nueva.setUsuarios(usuario);
+		
+		for (int i = 0; i < aux.size(); i++) {
+			if(nueva.getClase().getPlazas()<=0 || nueva.getEmail() == aux.get(i).getEmail() && nueva.getClase().getId() == aux.get(i).getClase().getId()) {
+				return"redirect:/reservar-clase-error";
+			}
+		}
 		nueva.getClase().setPlazas(nueva.getClase().getPlazas()-1);
 		reservaServicio.save(nueva);
 		return "redirect:/inicio";

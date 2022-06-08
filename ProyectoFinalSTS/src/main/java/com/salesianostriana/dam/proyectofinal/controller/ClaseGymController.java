@@ -31,7 +31,7 @@ public class ClaseGymController {
 	private ReservaServicio reservaServicio;
 
 	@GetMapping("/gestionar")
-	public String list(Model model) {
+	public String gestionarClasesReservas(Model model) {
 		
 		List<ReservaClase> aux = reservaServicio.findAll();
 		
