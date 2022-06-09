@@ -38,6 +38,7 @@ public class ClaseGymController {
 		for (int i = 0; i < aux.size(); i++) {
 			if(aux.get(i).getFechaReserva().compareTo(hoy) < 0) {
 				reservaServicio.delete(aux.get(i));
+				aux.get(i).getClase().setPlazas(aux.get(i).getClase().getPlazas()+1);
 			}
 		}
 		

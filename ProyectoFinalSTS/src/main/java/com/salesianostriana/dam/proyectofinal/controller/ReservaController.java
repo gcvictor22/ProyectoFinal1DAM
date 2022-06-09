@@ -41,8 +41,7 @@ public class ReservaController {
 	
 	@GetMapping("/reservar-clase-error")
 	public String showFormError(Model model, @AuthenticationPrincipal Usuario2 usuario) {
-		model.addAttribute("nombreUsuarioCompleto",
-				usuario.getNombre() + " " + usuario.getApellido1() + " " + usuario.getApellido2());
+		model.addAttribute("nombreUsuarioCompleto", usuario.getNombre() + " " + usuario.getApellido1() + " " + usuario.getApellido2());
 		model.addAttribute("telefono", usuario.getTelefono());
 		model.addAttribute("correo", usuario.getEmail());
 		model.addAttribute("reserva", new ReservaClase());
