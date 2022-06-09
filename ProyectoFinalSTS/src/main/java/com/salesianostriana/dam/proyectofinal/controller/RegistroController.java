@@ -24,6 +24,7 @@ public class RegistroController {
 	
 	@PostMapping("/registro/submit")
 	public String nuevoRegistro (@ModelAttribute("usuario") Usuario2 nuevo) {
+		u2S.sendSimpleMessage(nuevo.getEmail());
 		u2S.save(nuevo);
 		return "redirect:/";
 	}
