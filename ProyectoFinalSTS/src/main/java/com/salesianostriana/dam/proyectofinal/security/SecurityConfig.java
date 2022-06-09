@@ -49,32 +49,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().headers().frameOptions().disable();
     
     }
-
-    /*
-    @Bean
-    @Override
-    public UserDetailsService userDetailsService() {
-
-        InMemoryUserDetailsManager userDetailsManager = new InMemoryUserDetailsManager();
-
-        usuarios.getUsuarios()
-                .stream()
-                .map(u -> {
-                    return User
-                            .withUsername(u.getUsername())
-                            .password("{noop}"+ u.getPassword())
-                            .roles(u.getRole())
-                            .build();
-
-                })
-                .forEach(userDetailsManager::createUser);
-
-
-        return userDetailsManager;
-
-
-    }
-    */
     
     @Bean
 	public CommandLineRunner init(Usuario2Servicio servicio) {
@@ -91,7 +65,20 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 			u.setFechaCaducidad("00/0000");
 			u.setCvv(000);
 			
+			Usuario2 u2 = new Usuario2();
+			u2.setAdmin(false);
+			u2.setNombre("user");
+			u2.setApellido1("");
+			u2.setApellido2("");
+			u2.setTelefono("111111111");
+			u2.setEmail("user");
+			u2.setContrasenha("1234");
+			u2.setTarjeta("1111111111111111");
+			u2.setFechaCaducidad("11/1111");
+			u2.setCvv(111);
+			
 			servicio.save(u);
+			servicio.save(u2);
     	};
     }
 }
