@@ -1,5 +1,9 @@
 package com.salesianostriana.dam.proyectofinal.controller;
 
+import java.io.IOException;
+
+import javax.servlet.http.HttpServletResponse;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -7,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
+import com.lowagie.text.DocumentException;
 import com.salesianostriana.dam.proyectofinal.model.Usuario2;
 import com.salesianostriana.dam.proyectofinal.servicios.Usuario2Servicio;
 
@@ -23,10 +28,9 @@ public class RegistroController {
 	}
 	
 	@PostMapping("/registro/submit")
-	public String nuevoRegistro (@ModelAttribute("usuario") Usuario2 nuevo) {
-		u2S.sendSimpleMessage(nuevo.getEmail());
+	public String nuevoRegistro (@ModelAttribute("usuario") Usuario2 nuevo, HttpServletResponse http) throws DocumentException, IOException {
 		u2S.save(nuevo);
-		return "redirect:/";
+		return "redirect:/exito";
 	}
 	
 }

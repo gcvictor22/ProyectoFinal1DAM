@@ -1,6 +1,10 @@
 package com.salesianostriana.dam.proyectofinal.controller;
 
+import java.io.IOException;
 import java.time.LocalDate;
+import java.util.List;
+
+import javax.servlet.http.HttpServletResponse;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -12,12 +16,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.lowagie.text.DocumentException;
 import com.salesianostriana.dam.proyectofinal.model.ReservaClase;
 import com.salesianostriana.dam.proyectofinal.model.Usuario2;
 import com.salesianostriana.dam.proyectofinal.servicios.ClaseGymServicio;
 import com.salesianostriana.dam.proyectofinal.servicios.ReservaServicio;
-
-import java.util.List;
 
 @Controller
 public class ReservaController {
@@ -51,7 +54,7 @@ public class ReservaController {
 	}
 
 	@PostMapping("/nueva-reserva/submit")
-	public String saveClase(@ModelAttribute("reserva") ReservaClase nueva, @AuthenticationPrincipal Usuario2 usuario) {
+	public String saveClase(@ModelAttribute("reserva") ReservaClase nueva, @AuthenticationPrincipal Usuario2 usuario, HttpServletResponse http) throws DocumentException, IOException {
 		
 		List <ReservaClase> aux = reservaServicio.findAll();
 		
@@ -68,6 +71,16 @@ public class ReservaController {
 			}
 		}
 		nueva.getClase().setPlazas(nueva.getClase().getPlazas()-1);
+		
+		http.setContentType("application/pdf");
+		
+		String headerKey="Content-Disposition";
+		String headerValue="attachment; filename = Factura reserva " + nueva.getClase().getNombreClase() + " | " + nueva.getFechaReserva().toString() + ".pdf";
+
+		http.setHeader(headerKey, headerValue);
+		
+		this.reservaServicio.export(http, usuario, nueva);
+		
 		reservaServicio.save(nueva);
 		return "redirect:/inicio";
 	}

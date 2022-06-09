@@ -22,11 +22,14 @@
 	<div class="container bg-white border p-4 rounded" id="cajaInicio">
 		<h1 class="h2 text-center mb-4">Inicio de Sesión</h1>
 		<p th:if="${loginError}" class="text-danger bg-transparent">Error en el nombre de usuario y/o contraseña</p>
-		
+		<div th:if="${exito}" class="alert alert-success mb-4">
+			<strong>¡Felicidades!</strong> Usuario registrado con exito
+		</div>
 		<form form method="post" th:action="@{/login}" sec:authorize="!isAuthenticated()" class="mx-auto"
 			id="formularioInicio">
 			<div class="form-floating">
-				<input type="text" name="username" id="username" class="form-control" placeholder="Correo electrónico" required>
+				<input type="text" name="username" id="username" class="form-control" placeholder="Correo electrónico"
+					required>
 				<label for="username">Correo electrónico</label>
 			</div>
 			<br>
@@ -40,7 +43,8 @@
 			<p class="text-dark text-center mt-2 bg-transparent">¿No tienes cuenta? <a class="text-primary"
 					th:href="@{/registro}">Registrarme</a></p>
 		</form>
-		<p class="text-center bg-white" sec:authorize="isAuthenticated()">Sesión iniciada con: <span sec:authentication="name"></span></p>
+		<p class="text-center bg-white" sec:authorize="isAuthenticated()">Sesión iniciada con: <span
+				sec:authentication="name"></span></p>
 		<div sec:authorize="isAuthenticated()" class="d-flex justify-content-center w-100">
 			<a class="text-primary btn btn-primary mx-1 text-white" th:href="@{/inicio}">Entrar</a>
 			<a class="text-primary btn btn-danger mx-1 text-white" th:href="@{/logout}">Cerrar Sesión</a>

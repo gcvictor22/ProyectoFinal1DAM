@@ -1,6 +1,7 @@
 package com.salesianostriana.dam.proyectofinal.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
@@ -11,6 +12,12 @@ public class PublicController {
 		return "index";
 	}
 
+	@GetMapping("/exito")
+	public String welcomoNew(Model model) {
+		model.addAttribute("exito", true);
+		return "index";
+	}
+	
 	@GetMapping("/error")
 	public String error() {
 		return "error";

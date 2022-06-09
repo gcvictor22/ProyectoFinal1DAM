@@ -1,12 +1,7 @@
 package com.salesianostriana.dam.proyectofinal.servicios;
 
 import java.util.Optional;
-import java.util.Properties;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
-import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -16,9 +11,6 @@ import com.salesianostriana.dam.proyectofinal.servicios.base.ServicioBaseImpl;
 
 @Service
 public class Usuario2Servicio extends ServicioBaseImpl<Usuario2, Long, Usuario2Repository>{
-	
-	@Autowired
-    private JavaMailSender emailSender;
 	
 	public Usuario2Servicio(Usuario2Repository repo) {
 		super(repo);
@@ -38,30 +30,4 @@ public class Usuario2Servicio extends ServicioBaseImpl<Usuario2, Long, Usuario2R
 		return super.save(a);
 	}
 	
-	public JavaMailSender getJavaMailSender() {
-	    JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
-	    mailSender.setHost("smtp.gmail.com");
-	    mailSender.setPort(587);
-	    
-	    mailSender.setUsername("afitgo29@gmail.com");
-	    mailSender.setPassword("adminfit&go");
-	    
-	    Properties props = mailSender.getJavaMailProperties();
-	    props.put("mail.transport.protocol", "smtp");
-	    props.put("mail.smtp.auth", true);
-	    props.put("mail.smtp.starttls.enable", true);
-	    props.put("mail.debug", true);
-	    
-	    return mailSender;
-	}
-
-    public void sendSimpleMessage(String to) {
-        SimpleMailMessage message = new SimpleMailMessage(); 
-        message.setFrom("noreply@baeldung.com");
-        message.setTo(to); 
-        message.setSubject("PRUEBA"); 
-        message.setText("PRUEBA");
-        emailSender.send(message);
-    }
-
 }
