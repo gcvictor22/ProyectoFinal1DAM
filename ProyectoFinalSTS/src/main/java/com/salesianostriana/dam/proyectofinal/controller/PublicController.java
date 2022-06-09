@@ -13,8 +13,14 @@ public class PublicController {
 	}
 
 	@GetMapping("/exito")
-	public String welcomoNew(Model model) {
+	public String welcomNew(Model model) {
 		model.addAttribute("exito", true);
+		return "index";
+	}
+	
+	@GetMapping("/errorUsuarioExiste")
+	public String welcomRegisterError(Model model) {
+		model.addAttribute("usuarioExiste", true);
 		return "index";
 	}
 	

@@ -43,7 +43,6 @@ public class Usuario2 implements UserDetails {
 	private String apellido2;
 	private String telefono;
 	
-	@Column(unique = true)
 	private String email;
 	
 	private String contrasenha;

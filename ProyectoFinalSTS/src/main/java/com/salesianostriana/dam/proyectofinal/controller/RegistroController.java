@@ -1,8 +1,6 @@
 package com.salesianostriana.dam.proyectofinal.controller;
 
-import java.io.IOException;
-
-import javax.servlet.http.HttpServletResponse;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -11,7 +9,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 
-import com.lowagie.text.DocumentException;
 import com.salesianostriana.dam.proyectofinal.model.Usuario2;
 import com.salesianostriana.dam.proyectofinal.servicios.Usuario2Servicio;
 
@@ -28,7 +25,16 @@ public class RegistroController {
 	}
 	
 	@PostMapping("/registro/submit")
-	public String nuevoRegistro (@ModelAttribute("usuario") Usuario2 nuevo, HttpServletResponse http) throws DocumentException, IOException {
+	public String nuevoRegistro (@ModelAttribute("usuario") Usuario2 nuevo){
+		
+		List <Usuario2> aux = u2S.findAll();
+		
+		for (int i = 0; i < aux.size(); i++) {
+			if(aux.get(i).getEmail().equalsIgnoreCase(nuevo.getEmail())) {
+				return "redirect:/errorUsuarioExiste";
+			}
+		}
+		
 		u2S.save(nuevo);
 		return "redirect:/exito";
 	}
