@@ -37,28 +37,36 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().headers().frameOptions().disable();
 
     }
-
+    
     @Bean
-    @Override
-    public UserDetailsService userDetailsService() {
-
-        InMemoryUserDetailsManager userDetailsManager = new InMemoryUserDetailsManager();
-
-        usuarios.getUsuarios()
-                .stream()
-                .map(u -> {
-                    return User
-                            .withUsername(u.getUsername())
-                            .password("{noop}"+ u.getPassword())
-                            .roles(u.getRole())
-                            .build();
-
-                })
-                .forEach(userDetailsManager::createUser);
-
-
-        return userDetailsManager;
-
-
+	public CommandLineRunner init(Usuario2Servicio servicio) {
+    	return args -> {
+    		Usuario2 u = new Usuario2();
+			u.setAdmin(true);
+			u.setNombre("admin");
+			u.setApellido1("");
+			u.setApellido2("");
+			u.setTelefono("000000000");
+			u.setEmail("admin");
+			u.setContrasenha("admin");
+			u.setTarjeta("0000000000000000");
+			u.setFechaCaducidad("00/0000");
+			u.setCvv(000);
+			
+			Usuario2 u2 = new Usuario2();
+			u2.setAdmin(false);
+			u2.setNombre("user");
+			u2.setApellido1("");
+			u2.setApellido2("");
+			u2.setTelefono("111111111");
+			u2.setEmail("user");
+			u2.setContrasenha("1234");
+			u2.setTarjeta("1111111111111111");
+			u2.setFechaCaducidad("11/1111");
+			u2.setCvv(111);
+			
+			servicio.save(u);
+			servicio.save(u2);
+    	};
     }
 }

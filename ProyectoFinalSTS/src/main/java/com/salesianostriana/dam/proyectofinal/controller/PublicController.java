@@ -1,6 +1,7 @@
 package com.salesianostriana.dam.proyectofinal.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
@@ -12,6 +13,18 @@ public class PublicController {
 		return "index";
 	}
 
+	@GetMapping("/exito")
+	public String welcomNew(Model model) {
+		model.addAttribute("exito", true);
+		return "index";
+	}
+	
+	@GetMapping("/errorUsuarioExiste")
+	public String welcomRegisterError(Model model) {
+		model.addAttribute("usuarioExiste", true);
+		return "index";
+	}
+	
 	@GetMapping("/error")
 	public String error() {
 		return "error";
