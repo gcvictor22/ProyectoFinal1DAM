@@ -45,6 +45,26 @@ public class LoginController {
 		model.addAttribute("lista", claseServicio.findAll());
 		return "inicio";
 	}
+	
+	@GetMapping("/inicio-sin-clases")
+	public String loginSinClases(Model model, @AuthenticationPrincipal Usuario2 usuario) {
+
+		List<ReservaClase> aux = reservaServicio.findAll();
+
+		for (int i = 0; i < aux.size(); i++) {
+			if (aux.get(i).getFechaReserva().compareTo(hoy) < 0) {
+				reservaServicio.delete(aux.get(i));
+				aux.get(i).getClase().setPlazas(aux.get(i).getClase().getPlazas() + 1);
+			}
+		}
+
+		model.addAttribute("nombreUsuario", usuario.getNombre());
+		model.addAttribute("ap1", " " + usuario.getApellido1() + " ");
+		model.addAttribute("ap2", usuario.getApellido2());
+		model.addAttribute("lista", claseServicio.findAll());
+		model.addAttribute("sinClasesReservar", true);
+		return "inicio";
+	}
 
 	@GetMapping("/login-error")
 	public String loginError(Model model) {

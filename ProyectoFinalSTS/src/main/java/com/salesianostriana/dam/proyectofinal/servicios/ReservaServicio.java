@@ -1,6 +1,5 @@
 package com.salesianostriana.dam.proyectofinal.servicios;
 
-import java.time.LocalDate;
 import java.io.IOException;
 import java.util.List;
 import java.util.Random;
@@ -35,6 +34,11 @@ import com.salesianostriana.dam.proyectofinal.servicios.base.ServicioBaseImpl;
  */
 @Service
 public class ReservaServicio extends ServicioBaseImpl<ReservaClase, Long, ReservaRepository>{
+
+	public ReservaServicio(ReservaRepository repo) {
+		super(repo);
+		// TODO Auto-generated constructor stub
+	}
 
 	public List<ReservaClase> buscarPorNombre (String nombre){
 		
@@ -142,21 +146,6 @@ public class ReservaServicio extends ServicioBaseImpl<ReservaClase, Long, Reserv
 		pdf.add(separador2);
 		pdf.add(tabla2);
 		pdf.close();
-	}
-	
-	public boolean permitirReserva (String nombre, LocalDate fecha) {
-		List<ReservaClase> aux = buscarPorNombre(nombre);
-		boolean permitir = true;
-		
-		
-		for (int i = 0; i < aux.size(); i++) {
-			if(aux.get(i).getNombreUsuario().equalsIgnoreCase(nombre) && aux.get(i).getFechaReserva().isEqual(fecha)) {
-				permitir = false;
-			}else {
-				permitir = true;
-			}
-		}
-		return permitir;
 	}
 	
 }

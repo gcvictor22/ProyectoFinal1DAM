@@ -4,6 +4,8 @@ document.getElementById("atras").addEventListener("click", reducir);
 let width = 0;
 let cont = 0;
 let comprobacion = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+let textoError = document.getElementById("textoError");
+textoError.style.visibility = 'hidden';
 
 urlParams = new URLSearchParams(window.location.search);
 

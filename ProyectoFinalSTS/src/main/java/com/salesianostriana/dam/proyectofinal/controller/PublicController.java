@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class PublicController {
 	
-	
 	@GetMapping("/")
 	public String welcome() {
 		return "index";
@@ -33,11 +32,6 @@ public class PublicController {
 	@GetMapping("/info")
 	public String info() {
 		return "info";
-	}
-	
-	@GetMapping("/registro")
-	public String registro() {
-		return "registro";
 	}
 	
 	@GetMapping("/politica")

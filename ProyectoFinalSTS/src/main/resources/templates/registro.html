@@ -51,54 +51,56 @@
             </div>
         </div>
         <br>
-        <form th:action="@{/}" name="registro" method="post">
+        <form th:action="@{/registro/submit}" th:object="${usuario}" name="registro" method="post">
             <div class="container" id="formularioRegistro">
                 <div class="container mx-auto my-auto text-center" id="seccion1">
                     <h2 class="h2">Datos personales</h2>
                     <br>
                     <div class="w-100 row mx-0">
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" class="col-lg-5 col-sm-12" required>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" th:field="*{nombre}" class="col-lg-5 col-sm-12" required>
                         <br>
                         <div class="col-lg-2 col-sm-0"></div>
                         <br>
-                        <input type="text" name="apellido1" id="apellido1" placeholder="Primer apellido" class="col-lg-5 col-sm-12" required>
+                        <input type="text" name="apellido1" id="apellido1" placeholder="Primer apellido" th:field="*{apellido1}" class="col-lg-5 col-sm-12" required>
                     </div>
                     <br>
                     <div class="w-100 row mx-0">
-                        <input type="text" name="apellido2" id="apellido2" placeholder="Segundo apellido" class="col-lg-5 col-sm-12">
+                        <input type="text" name="apellido2" id="apellido2" placeholder="Segundo apellido" th:field="*{apellido2}" class="col-lg-5 col-sm-12" required>
                         <br>
                         <div class="col-lg-2 col-sm-0"></div>
                         <br>
-                        <input type="tel" maxlength="9" minlength="9" name="telefono" id="telefono" placeholder="Teléfono" class="col-lg-5 col-sm-12" required>
+                        <input type="tel" maxlength="9" minlength="9" name="telefono" id="telefono" th:field="*{telefono}" placeholder="Teléfono" class="col-lg-5 col-sm-12" required>
                     </div>
                     <br>
                     <div class="w-100 d-flex justify-content-around p-0 cajasDatos">
-                        <input type="email" name="correo" id="correo" class="w-100" placeholder="Correo electrónico" required>
+                        <input type="email" name="correo" id="correo" class="w-100" placeholder="Correo electrónico" th:field="*{email}" required>
                     </div>
                     <br>
                     <div class="w-100 row mx-0">
-                        <input type="password" name="contrasenha1" id="contrasenha1" placeholder="Contraseña" class="col-lg-5 col-sm-12" required>
+                        <input type="password" name="contrasenha1" id="contrasenha1" placeholder="Contraseña" th:field="*{contrasenha}" class="col-lg-5 col-sm-12" required>
                         <br>
                         <div class="col-lg-2 col-sm-0"></div>
                         <br>
                         <input type="password" name="contrasenha2" id="contrasenha2" placeholder="Repetir contraseña" class="col-lg-5 col-sm-12" required>
                     </div>
                     <br>
+                    <p class="text-danger bg-transparent" id="textoError">Faltan datos por rellenar o no cumplen el formato esperado, complete todos los datos marcados con el borde rojo para continuar</p>
                 </div>
                 <div class="container mx-auto text-center bg-white rounded" id="seccion2">
                     <h2 class="h2">Datos fiscales</h2>
                     <br>
                     <div class="w-100 d-flex justify-content-between">
-                        <input type="text" maxlength="16" minlength="16" name="numTarjeta" id="numTarjeta" class="w-100" placeholder="Nº de tarjeta" required>
+                        <input type="text" maxlength="16" minlength="16" name="numTarjeta" id="numTarjeta" th:field="*{tarjeta}" class="w-100" placeholder="Nº de tarjeta" required>
                     </div>
                     <br>
                     <div class="w-100 row mx-0">
-                        <input type="month" name="fechaCaducidad" id="fechaCaducidad" placeholder=" Fecha de caducidad" class="col-lg-5 col-sm-12" required>
+                        <input type="month" name="fechaCaducidad" id="fechaCaducidad" placeholder="Fecha de caducidad" th:field="*{fechaCaducidad}" class="col-lg-5 col-sm-12" required>
                         <br>
                         <div class="col-lg-2 col-sm-0"></div>
                         <br>
-                        <input type="text" name="cvv" id="cvv" maxlength="3" minlength="3" placeholder="CVV" class="col-lg col-sm-12" required>
+                        <input type="text" name="cvv" id="cvv" maxlength="3" minlength="3" placeholder="CVV" th:field="*{cvv}" class="col-lg col-sm-12" required>
                     </div>
+                    <input type="hidden" th:field="*{admin}">
                     <br>
                     <br>
                     <img src="../img/pagos.png" class="mx-auto w-50" alt="pagosAceptados">

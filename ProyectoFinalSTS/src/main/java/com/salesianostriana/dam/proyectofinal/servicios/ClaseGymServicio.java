@@ -18,5 +18,10 @@ import com.salesianostriana.dam.proyectofinal.servicios.base.ServicioBaseImpl;
  */
 @Service
 public class ClaseGymServicio extends ServicioBaseImpl<ClaseGym, Long, ClaseGymRepository>{
+
+	public ClaseGymServicio(ClaseGymRepository repo) {
+		super(repo);
+		// TODO Auto-generated constructor stub
+	}
 	
 }

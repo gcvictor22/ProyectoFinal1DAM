@@ -12,6 +12,10 @@ public abstract class ServicioBaseImpl<T, ID, R extends JpaRepository<T, ID>> im
 	protected R repositorio;
 	
 	
+	public ServicioBaseImpl(R repo) {
+		this.repositorio = repo;
+	}
+
 	@Override
 	public List<T> findAll() {
 		return repositorio.findAll();

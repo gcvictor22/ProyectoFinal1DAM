@@ -38,4 +38,9 @@ public class ReservaClase {
 	@ToString.Exclude
 	@EqualsAndHashCode.Exclude
 	private ClaseGym clase;
+	
+	@ManyToOne
+	@ToString.Exclude
+	@EqualsAndHashCode.Exclude
+	private Usuario2 usuarios;
 }

@@ -59,7 +59,8 @@
 									<path
 										d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
 								</svg>
-								<span sec:authentication="name"></span>
+								<span th:text="${nombreUsuario}"></span><span th:text="${ap1}"></span><span
+									th:text="${ap2}"></span>
 							</p>
 							<a href="registro.html" th:href="@{/logout}" class="btn btn-primary">Cerrar Sesión</a>
 						</div>
@@ -73,11 +74,15 @@
 			</nav>
 		</header>
 		<main>
+			<div th:if="${sinClasesReservar}" class="alert alert-danger mb-4 container mt-4">
+				<strong>¡Error!</strong> No hay ninguna clase para reservar
+				<a class="float-end" th:href="@{/inicio}">Aceptar</a>
+			</div>
 			<div class="container-fluid d-flex justify-content-center">
 				<img src="../img/logoIndex.png" alt="fit&go" id="logoIndex" data-aos="zoom-in">
 			</div>
 			<p class="text-justify w-75 mx-auto text-white bg-transparent">
-				¡Hola de nuevo <span sec:authentication="name"></span>! Como siempre, sabes que tienes a tu disposición
+				¡Hola de nuevo <span th:text="${nombreUsuario}"></span>! Como siempre, sabes que tienes a tu disposición
 				nuestros mejores especialistas.
 				En Fit&Go siempre queremos que nuestros clientes mantengan la misma ilusión que el primer día que
 				llegaron a
@@ -110,15 +115,19 @@
 			<div class="container w-100" data-aos="flip-right">
 				<h1 class="h1 text-center text-white mb-5">Clases</h1>
 				<div class="container-fluid row mx-0 mb-3">
-					<div class="bg-white col-lg-5 col-sm-12 mx-auto my-4 rounded border border-primary p-3"  th:each="claseGym : ${lista}">
+					<div class="bg-white col-lg-5 col-sm-12 mx-auto my-4 rounded border border-primary p-3"
+						th:each="claseGym : ${lista}">
 						<h3 class="text-center" th:text="${claseGym.nombreClase}"></h3>
 						<div class="w-50 float-start">
 							<img th:src="${claseGym.imgClase}" class="w-50 d-block mx-auto">
 						</div>
 						<div class="w-50 float-end">
-							<p class="bg-transparent my-2 text-center">Horario: <span th:text="${claseGym.horario}"></span></p>
-							<p class="bg-transparent my-2 text-center">Plazas: <span th:text="${claseGym.plazas}"></span></p>
-							<p class="btn btn-primary text-center my-2 w-100">Precio: <span th:text="${claseGym.precio}"></span>€</p>
+							<p class="bg-transparent my-2 text-center">Horario: <span
+									th:text="${claseGym.horario}"></span></p>
+							<p class="bg-transparent my-2 text-center">Plazas: <span
+									th:text="${claseGym.plazas}"></span></p>
+							<p class="btn btn-primary text-center my-2 w-100">Precio: <span
+									th:text="${claseGym.precio}"></span>€</p>
 						</div>
 					</div>
 				</div>
@@ -184,6 +193,7 @@
 			</div>
 			<input type="hidden" id="siguiente">
 			<input type="hidden" id="atras">
+			<p id="textoError" style="display: none;"></p>
 		</main>
 		<footer class="container-fluid bg-dark py-3">
 			<div class="row" id="indexfooter">
