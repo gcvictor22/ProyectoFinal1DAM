@@ -3,7 +3,6 @@ document.getElementById("atras").addEventListener("click", reducir);
 
 let width = 0;
 let cont = 0;
-let comprobacion = /^([\da-z_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
 let textoError = document.getElementById("textoError");
 textoError.style.visibility = 'hidden';
 
@@ -53,10 +52,38 @@ function ampliar() {
 		document.getElementById("cajaFormulario").style.border = "2px solid #dc3545";
 		textoError.style.visibility = "visible";
 
+		if (nom.length == 0) {
+			document.getElementById("nombre").style.borderBottom = "2px solid #dc3545";
+		}
+
+		if (ap1.length == 0) {
+			document.getElementById("apellido1").style.borderBottom = "2px solid #dc3545";
+		}
+
+		if (ap2.length == 0) {
+			document.getElementById("apellido2").style.borderBottom = "2px solid #dc3545";
+		}
+
+		if (telefono.length == 0) {
+			document.getElementById("telefono").style.borderBottom = "2px solid #dc3545";
+		}
+
+		if (correo.length == 0) {
+			document.getElementById("correo").style.borderBottom = "2px solid #dc3545";
+		}
+
+		if (pass.length == 0) {
+			document.getElementById("contrasenha1").style.borderBottom = "2px solid #dc3545";
+		}
+
+		if (pass2.length == 0) {
+			document.getElementById("contrasenha2").style.borderBottom = "2px solid #dc3545";
+		}
+
 	} else if (telefono.length != 9) {
 		alert('El teléfono introducido no cumple con el formato esperado');
 
-	} else if (!comprobacion.exec(correo) && correo.length == 0) {
+	} else if (!correo.split("@") || correo.length < 10) {
 		document.getElementById("correo").style.borderBottom = "2px solid #dc3545";
 		textoError.style.visibility = "visible";
 
@@ -77,9 +104,31 @@ function ampliar() {
 		document.getElementById("cajaFormulario").style.border = "";
 		textoError.style.visibility = "hidden";
 
+		document.getElementById("nombre").style.borderBottom = "";
+		document.getElementById("apellido1").style.borderBottom = "";
+		document.getElementById("apellido2").style.borderBottom = "";
+		document.getElementById("telefono").style.borderBottom = "";
+		document.getElementById("correo").style.borderBottom = "";
+		document.getElementById("contrasenha1").style.borderBottom = "";
+		document.getElementById("contrasenha2").style.borderBottom = "";
+
+		cvv = "";
+	
 	} else if (tarj.length == 0 || fechaCad.length == 0 || cvv.length == 0) {
 		document.getElementById("cajaFormulario").style.border = "2px solid #dc3545";
 		textoError.style.visibility = "visible";
+
+		if (tarj.length == 0) {
+			document.getElementById("numTarjeta").style.border = "2px solid #dc3545";
+		}
+
+		if (fechaCad.length == 0) {
+			document.getElementById("fechaCaducidad").style.border = "2px solid #dc3545";
+		}
+
+		if (cvv < 100) {
+			document.getElementById("cvv").style.border = "2px solid #dc3545";
+		}
 
 	} else if (cont == 1 && tarj.length != 0 && fechaCad.length != 0 && cvv.length != 0) {
 		cont++;
@@ -95,6 +144,11 @@ function ampliar() {
 
 		document.getElementById("cajaFormulario").style.border = "";
 		textoError.style.visibility = "hidden";
+
+		document.getElementById("numTarjeta").style.border = "";
+		document.getElementById("fechaCaducidad").style.border = "";
+		document.getElementById("cvv").style.border = "";
+
 	}
 	barra.style.width = width + '%';
 }

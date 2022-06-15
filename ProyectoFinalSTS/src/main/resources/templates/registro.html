@@ -98,7 +98,7 @@
                         <br>
                         <div class="col-lg-2 col-sm-0"></div>
                         <br>
-                        <input type="text" name="cvv" id="cvv" maxlength="3" minlength="3" placeholder="CVV" th:field="*{cvv}" class="col-lg col-sm-12" required>
+                        <input type="number" id="cvv" maxlenght=3 min=100 th:field="*{cvv}" class="col-lg col-sm-12">
                     </div>
                     <input type="hidden" th:field="*{admin}">
                     <br>
