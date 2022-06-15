@@ -87,7 +87,7 @@ public class ReservaController {
 		this.reservaServicio.export(http, usuario, nueva);
 		
 		reservaServicio.save(nueva);
-		return "redirect:/inicio";
+		return "";
 	}
 
 	@GetMapping("/borrar-reserva/{id}")
