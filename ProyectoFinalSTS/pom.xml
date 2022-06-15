@@ -10,10 +10,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.salesianostriana.dam</groupId>
-	<artifactId>SeguridadBasica02</artifactId>
+	<artifactId>Fit-Go</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SeguridadBasica02</name>
-	<description>Ejemplo de seguridad en memoria con formulario de login personalizado</description>
+	<name>Fit-Go</name>
+	<description>Gestion de gimnasio</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
@@ -87,4 +87,3 @@
 	</build>
 
 </project>
-
